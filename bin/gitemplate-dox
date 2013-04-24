@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+/**
+ * Generate node module API markdown with dox
+ *
+ * Licensed under MIT.
+ * Copyright (c) 2013 David Smith <https://github.com/codeactual/>
+ */
+
+var commander = require('commander');
+
+commander
+  .option('-s, --something <something>', 'description', String, 'default');
+
+require('impulse-bin').create().run(commander, require('../lib/cli/gitemplate-dox'));

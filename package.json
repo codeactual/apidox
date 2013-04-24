@@ -1,0 +1,48 @@
+{
+  "name": "gitemplate-dox",
+  "description": "Generate node module API markdown with dox",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": "./bin/gitemplate-dox",
+  "keywords": [
+  ],
+  "contributors": [
+    {
+      "name": "David Smith",
+      "web": "https://github.com/codeactual/"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/codeactual/gitemplate-dox/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeactual/gitemplate-dox.git"
+  },
+  "dependencies": {
+    "commander": "~1.1.1",
+    "impulse-bin": "~0.1.0",
+    "outer-shelljs": "~0.3.0"
+  },
+  "devDependencies": {
+    "chai": "~1.5.0",
+    "component": "~0.13.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-shell": "~0.2.1",
+    "mocha": "~1.9.0",
+    "sinon": "~1.6.0",
+    "sinon-chai": "~2.3.1",
+    "sinon-doublist": "~0.3.0",
+    "sinon-doublist-fs": "~0.2.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "gitemplate": {
+    "originSha": "0ad44ac551",
+    "originUrl": "/var/dev/gitemplate-node-bin/.git"
+  }
+}

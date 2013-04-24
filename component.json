@@ -1,0 +1,16 @@
+{
+  "name": "gitemplate-dox",
+  "repo": "codeactual/gitemplate-dox",
+  "description": "Generate node module API markdown with dox",
+  "version": "0.1.0",
+  "keywords": [],
+  "dependencies": {
+    "visionmedia/configurable.js": "f87ca5f",
+    "codeactual/extend": "0.1.0"
+  },
+  "main": "lib/component/main.js",
+  "scripts": [
+    "lib/component/main.js"
+  ],
+  "license": "MIT"
+}
