@@ -9,6 +9,6 @@
 var commander = require('commander');
 
 commander
-  .option('-s, --something <something>', 'description', String, 'default');
+  .option('-f, --file <name>', 'Source file', String);
 
 require('impulse-bin').create().run(commander, require('../lib/cli/gitemplate-dox'));
