@@ -6,6 +6,7 @@
 - [Klass](#klass)
 - [Klass.prototype.foo](#klassprototypefoo)
 - [Klass.prototype.bar](#klassprototypebar)
+- [Klass.baz](#klassbaz)
 
 # exports.Klass()
 
@@ -76,7 +77,7 @@ Foo 2nd section:
 
 # Klass.prototype.bar(noSummary, str, mixed)
 
-Bat summary
+Bar summary
 
 Link this: `foo()`
 Link this: `Klass#foo()`
@@ -102,3 +103,17 @@ Mixed body 2nd line
 
 Return body 1st line
 Return body 2nd line
+
+# Klass.baz(arr)
+
+Baz summary
+
+Baz description
+
+## Parameters
+
+### `{array} arr`
+
+## Return
+
+### `{array}`: Return summary

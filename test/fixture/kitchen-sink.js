@@ -82,7 +82,7 @@ Klass.prototype.foo = function() {
 };
 
 /**
- * Bat summary
+ * Bar summary
  *
  * Link this: `foo()`
  * Link this: `Klass#foo()`
@@ -100,6 +100,17 @@ Klass.prototype.foo = function() {
  *   Return body 2nd line
  */
 Klass.prototype.bar = function(noSummary, str, obj) {
+};
+
+/**
+ * Baz summary
+ *
+ * Baz description
+ *
+ * @param {array} arr
+ * @return {array} Return summary
+ */
+Klass.baz = function(arr) {
 };
 
 /**
