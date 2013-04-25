@@ -6,7 +6,7 @@ Klass constructor.
 
 Return a new Klass() instance.
 
-# exports.extend()
+# exports.extend(ext)
 
 Extend `Klass.prototype`
 
@@ -40,7 +40,7 @@ Foo 2nd section:
 - `item`: Summary 1
 - `item`: Summary 2
 
-# Klass.prototype.bar()
+# Klass.prototype.bar(str, obj)
 
 Bat summary
 

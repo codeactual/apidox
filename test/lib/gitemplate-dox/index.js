@@ -11,8 +11,14 @@ describe('GitemplateDox', function() {
 
   it('should parse fixture', function() {
     this.dox.parseFile(fixture('kitchen-sink.js'));
-    var expected = T.fs.readFileSync(fixture('kitchen-sink.md')).toString();
-    this.dox.build().should.equal(expected);
+
+    var expectedStr = T.fs.readFileSync(fixture('kitchen-sink.md')).toString();
+    var actualStr = this.dox.build();
+
+    // split() for easier-to-read diff from mocha
+    actualStr.split('\n').should.deep.equal(expectedStr.split('\n'));
+
+    actualStr.should.equal(expectedStr);
   });
 });
 
