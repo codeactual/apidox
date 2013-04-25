@@ -82,6 +82,16 @@ Klass.prototype.foo = function() {
  * Link this: Klass.prototype.foo
  * Link this: Klass.baz
  *
+ * ```js
+ * // Don't link this: Klass.baz
+ * ```
+ *
+ * ```
+ * // Don't link this: Klass.baz
+ * ```
+ *
+ * `Don't link this: Klass.baz `
+ *
  * @param {string} noSummary
  * @param {string} str String summary, link this: Klass.baz
  *   String body 1st line

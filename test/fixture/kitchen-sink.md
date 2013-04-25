@@ -82,6 +82,16 @@ Bar summary, link this: [Klass.baz](#klassbaz)
 Link this: [Klass.prototype.foo](#klassprototypefoo)
 Link this: [Klass.baz](#klassbaz)
 
+```js
+// Don't link this: Klass.baz
+```
+
+```
+// Don't link this: Klass.baz
+```
+
+`Don't link this: Klass.baz `
+
 ## Parameters
 
 ### `{string} noSummary`
