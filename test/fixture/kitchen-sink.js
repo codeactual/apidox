@@ -72,11 +72,6 @@ function Klass() {
  *
  * - `item`: Summary 1
  * - `item`: Summary 2
- *
- * @see http://www.google.com
- * @see bar()
- * @see Klass#bar()
- * @see Klass.bar()
  */
 Klass.prototype.foo = function() {
 };
@@ -86,7 +81,7 @@ Klass.prototype.foo = function() {
  *
  * Link this: `foo()`
  * Link this: `Klass#foo()`
- * Link this: `Klass.foo()`
+ * Link this: `Klass.baz()`
  *
  * @param {string} noSummary
  * @param {string} str String summary
@@ -95,6 +90,10 @@ Klass.prototype.foo = function() {
  * @param {string|array} mixed Mixed summary
  *   Mixed body 1st line
  *   Mixed body 2nd line
+ * @see Google http://www.google.com/
+ * @see foo()
+ * @see Klass#foo()
+ * @see Klass.baz()
  * @return {array} Return summary
  *   Return body 1st line
  *   Return body 2nd line

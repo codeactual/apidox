@@ -81,7 +81,7 @@ Bar summary
 
 Link this: `foo()`
 Link this: `Klass#foo()`
-Link this: `Klass.foo()`
+Link this: `Klass.baz()`
 
 ## Parameters
 
@@ -103,6 +103,13 @@ Mixed body 2nd line
 
 Return body 1st line
 Return body 2nd line
+
+## See
+
+- [Google](http://www.google.com/)
+- foo()
+- Klass#foo()
+- Klass.baz()
 
 # Klass.baz(arr)
 
