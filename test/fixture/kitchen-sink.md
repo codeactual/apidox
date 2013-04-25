@@ -1,4 +1,4 @@
-# exports.Klass
+# exports.Klass()
 
 Klass constructor.
 
@@ -9,6 +9,10 @@ Return a new Klass() instance.
 # exports.extend(ext)
 
 Extend `Klass.prototype`
+
+## Parameters
+
+### `{object} ext`: Methods to mix in.
 
 # Klass()
 
@@ -40,7 +44,7 @@ Foo 2nd section:
 - `item`: Summary 1
 - `item`: Summary 2
 
-# Klass.prototype.bar(str, obj)
+# Klass.prototype.bar(str, mixed)
 
 Bat summary
 
@@ -48,6 +52,8 @@ Link this: `foo()`
 Link this: `Klass#foo()`
 Link this: `Klass.foo()`
 
-# klassNoOp()
+## Parameters
 
-@api private
+### `{string} str`: String summary
+
+### `{string | array} mixed`: Mixed summary

@@ -78,9 +78,9 @@ Klass.prototype.foo = function() {
  * @param {string} str String summary
  *   String body 1st line
  *   String body 2nd line
- * @param {object} obj Object summary
- *   Object body 1st line
- *   Object body 2nd line
+ * @param {string|array} mixed Mixed summary
+ *   Mixed body 1st line
+ *   Mixed body 2nd line
  * @return {array} Return summary
  *   Return body 1st line
  *   Return body 2nd line
@@ -89,6 +89,8 @@ Klass.prototype.bar = function(str, obj) {
 };
 
 /**
+ * Test @api private
+ *
  * @api private
  */
 function klassNoOp() {};
