@@ -77,7 +77,7 @@ Foo 2nd section:
 
 # Klass.prototype.bar(noSummary, str, mixed)
 
-Bar summary
+Bar summary, link this: [Klass.baz](#klassbaz)
 
 Link this: [Klass.prototype.foo](#klassprototypefoo)
 Link this: [Klass.baz](#klassbaz)

@@ -77,7 +77,7 @@ Klass.prototype.foo = function() {
 };
 
 /**
- * Bar summary
+ * Bar summary, link this: Klass.baz
  *
  * Link this: Klass.prototype.foo
  * Link this: Klass.baz
