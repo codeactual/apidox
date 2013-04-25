@@ -1,3 +1,12 @@
+# Contents
+
+- [exports.Klass](#exportsklass)
+- [exports.create](#exportscreate)
+- [exports.extend](#exportsextend)
+- [Klass](#klass)
+- [Klass.prototype.foo](#klassprototypefoo)
+- [Klass.prototype.bar](#klassprototypebar)
+
 # exports.Klass()
 
 Klass constructor.
