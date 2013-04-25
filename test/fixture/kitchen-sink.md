@@ -1,5 +1,9 @@
 # Contents
 
+First comment summary
+
+First comment description
+
 - [exports.Klass](#exportsklass)
 - [exports.create](#exportscreate)
 - [exports.extend](#exportsextend)
