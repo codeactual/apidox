@@ -4,7 +4,11 @@ Klass constructor.
 
 # exports.create()
 
-Return a new Klass() instance.
+Create a new Klass() instance.
+
+## Return
+
+### `{Klass}`
 
 # exports.extend(ext)
 
@@ -13,6 +17,10 @@ Extend `Klass.prototype`
 ## Parameters
 
 ### `{object} ext`: Methods to mix in.
+
+## Return
+
+### `{object}`: Merge result.
 
 # Klass()
 
@@ -44,7 +52,7 @@ Foo 2nd section:
 - `item`: Summary 1
 - `item`: Summary 2
 
-# Klass.prototype.bar(str, mixed)
+# Klass.prototype.bar(noSummary, str, mixed)
 
 Bat summary
 
@@ -53,6 +61,8 @@ Link this: `Klass#foo()`
 Link this: `Klass.foo()`
 
 ## Parameters
+
+### `{string} noSummary`
 
 ### `{string} str`: String summary
 
@@ -63,3 +73,10 @@ String body 2nd line
 
 Mixed body 1st line
 Mixed body 2nd line
+
+## Return
+
+### `{array}`: Return summary
+
+Return body 1st line
+Return body 2nd line

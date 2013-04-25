@@ -13,7 +13,7 @@
 exports.Klass = Klass;
 
 /**
- * Return a new Klass() instance.
+ * Create a new Klass() instance.
  *
  * @return {Klass}
  */
@@ -75,6 +75,7 @@ Klass.prototype.foo = function() {
  * Link this: `Klass#foo()`
  * Link this: `Klass.foo()`
  *
+ * @param {string} noSummary
  * @param {string} str String summary
  *   String body 1st line
  *   String body 2nd line
@@ -85,7 +86,7 @@ Klass.prototype.foo = function() {
  *   Return body 1st line
  *   Return body 2nd line
  */
-Klass.prototype.bar = function(str, obj) {
+Klass.prototype.bar = function(noSummary, str, obj) {
 };
 
 /**
