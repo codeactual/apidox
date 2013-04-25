@@ -81,6 +81,7 @@ Klass.prototype.foo = function() {
  *
  * Link this: Klass.prototype.foo
  * Link this: Klass.baz
+ * Don't double-link this: [Klass.baz](#klassbaz)
  *
  * ```js
  * // Don't link this: Klass.baz
@@ -90,7 +91,8 @@ Klass.prototype.foo = function() {
  * // Don't link this: Klass.baz
  * ```
  *
- * `Don't link this: Klass.baz `
+ * ` Don't link this: Klass.baz `
+ * `Don't link this: Klass.baz`
  *
  * @param {string} noSummary
  * @param {string} str String summary, link this: Klass.baz
