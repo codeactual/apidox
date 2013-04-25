@@ -2,6 +2,19 @@
 
 Klass constructor.
 
+constructor summary
+constructor 2nd line
+
+constructor 1st section:
+
+- `item`: Summary 1
+- `item`: Summary 2
+
+constructor 2nd section:
+
+- `item`: Summary 1
+- `item`: Summary 2
+
 # exports.create()
 
 Create a new Klass() instance.
