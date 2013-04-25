@@ -91,9 +91,9 @@ Klass.prototype.foo = function() {
  *   Mixed body 1st line
  *   Mixed body 2nd line
  * @see Google http://www.google.com/
- * @see foo()
- * @see Klass#foo()
- * @see Klass.baz()
+ * @see foo
+ * @see Klass.prototype.foo
+ * @see Klass.baz
  * @return {array} Return summary
  *   Return body 1st line
  *   Return body 2nd line

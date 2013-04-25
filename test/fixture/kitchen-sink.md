@@ -107,9 +107,9 @@ Return body 2nd line
 ## See
 
 - [Google](http://www.google.com/)
-- foo()
-- Klass#foo()
-- Klass.baz()
+- [Klass.prototype.foo](#klassprototypefoo)
+- [Klass.prototype.foo](#klassprototypefoo)
+- [Klass.baz](#klassbaz)
 
 # Klass.baz(arr)
 
