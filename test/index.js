@@ -8,7 +8,6 @@ chai.Assertion.includeStack = true;
 
 T.fs = require('fs');
 T.sinonDoublist = require('sinon-doublist');
-T.sinonDoublistFs = require('sinon-doublist-fs');
 
 T.requireComponent = require('../lib/component/require');
 
@@ -16,10 +15,8 @@ T.gitemplateDox = require('..');
 
 beforeEach(function() {
   T.sinonDoublist(T.sinon, this);
-  T.sinonDoublistFs(this);
 });
 
 afterEach(function() {
-  this.restoreFs();
   this.sandbox.restore();
 });

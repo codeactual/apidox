@@ -35,8 +35,7 @@
     "mocha": "~1.9.0",
     "sinon": "~1.6.0",
     "sinon-chai": "~2.3.1",
-    "sinon-doublist": "~0.3.0",
-    "sinon-doublist-fs": "~0.2.0"
+    "sinon-doublist": "~0.3.0"
   },
   "scripts": {
     "test": "grunt test"
