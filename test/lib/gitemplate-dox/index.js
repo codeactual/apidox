@@ -1,16 +1,19 @@
 /*jshint node:true*/
 var T = require('../..');
 var gitemplateDox = T.gitemplateDox;
+var path = require('path');
 
 describe('GitemplateDox', function() {
   'use strict';
 
   beforeEach(function() {
     this.dox = gitemplateDox.create();
+    this.dox.set('rootdir', path.normalize(__dirname + '/../../..'));
   });
 
   it('should parse fixture', function() {
-    this.dox.parseFile(fixture('kitchen-sink.js'));
+    this.dox.set('file', fixture('kitchen-sink.js'));
+    this.dox.parse(fixture('kitchen-sink.js'));
 
     var expectedStr = T.fs.readFileSync(fixture('kitchen-sink.md')).toString();
     var actualStr = this.dox.build();

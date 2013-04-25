@@ -4,6 +4,8 @@ First comment summary
 
 First comment description
 
+Source: [test/fixture/kitchen-sink.js](test/fixture/kitchen-sink.js)
+
 - [exports.Klass](#exportsklass)
 - [exports.create](#exportscreate)
 - [exports.extend](#exportsextend)

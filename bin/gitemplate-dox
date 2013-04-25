@@ -9,6 +9,7 @@
 var commander = require('commander');
 
 commander
+  .option('-r, --rootdir <dir>', 'Project/repo root directory', String, process.cwd())
   .option('-f, --file <name>', 'Source file', String);
 
 require('impulse-bin').create().run(commander, require('../lib/cli/gitemplate-dox'));
