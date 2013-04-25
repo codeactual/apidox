@@ -10,7 +10,7 @@
 
 # exports.Klass()
 
-Klass constructor.
+[Klass](#klass) constructor.
 
 constructor summary
 constructor 2nd line
@@ -35,7 +35,7 @@ Create a new Klass() instance.
 
 # exports.extend(ext)
 
-Extend `Klass.prototype`
+Extend `Klass.prototype`.
 
 ## Parameters
 
@@ -62,7 +62,7 @@ Klass 2nd section:
 
 # Klass.prototype.foo()
 
-Foo summary
+Foo summary, link this: [Klass.baz](#klassbaz)
 Foo 2nd line
 
 Foo 1st section:
@@ -79,15 +79,14 @@ Foo 2nd section:
 
 Bar summary
 
-Link this: `foo()`
-Link this: `Klass#foo()`
-Link this: `Klass.baz()`
+Link this: [Klass.prototype.foo](#klassprototypefoo)
+Link this: [Klass.baz](#klassbaz)
 
 ## Parameters
 
 ### `{string} noSummary`
 
-### `{string} str`: String summary
+### `{string} str`: String summary, link this: [Klass.baz](#klassbaz)
 
 String body 1st line
 String body 2nd line
@@ -96,18 +95,19 @@ String body 2nd line
 
 Mixed body 1st line
 Mixed body 2nd line
+Link this: [Klass.baz](#klassbaz)
 
 ## Return
 
-### `{array}`: Return summary
+### `{array}`: Return summary, link this: [Klass.baz](#klassbaz)
 
 Return body 1st line
 Return body 2nd line
+Link this: [Klass.baz](#klassbaz)
 
 ## See
 
 - [Google](http://www.google.com/)
-- [Klass.prototype.foo](#klassprototypefoo)
 - [Klass.prototype.foo](#klassprototypefoo)
 - [Klass.baz](#klassbaz)
 

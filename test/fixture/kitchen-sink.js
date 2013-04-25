@@ -8,7 +8,7 @@
 'use strict';
 
 /**
- * Klass constructor.
+ * [Klass](#klass) constructor.
  *
  * constructor summary
  * constructor 2nd line
@@ -33,7 +33,7 @@ exports.Klass = Klass;
 exports.create = function() { return new Klass(); }
 
 /**
- * Extend `Klass.prototype`
+ * Extend `Klass.prototype`.
  *
  * @param {object} ext Methods to mix in.
  * @return {object} Merge result.
@@ -60,7 +60,7 @@ function Klass() {
 }
 
 /**
- * Foo summary
+ * Foo summary, link this: Klass.baz
  * Foo 2nd line
  *
  * Foo 1st section:
@@ -79,24 +79,24 @@ Klass.prototype.foo = function() {
 /**
  * Bar summary
  *
- * Link this: `foo()`
- * Link this: `Klass#foo()`
- * Link this: `Klass.baz()`
+ * Link this: Klass.prototype.foo
+ * Link this: Klass.baz
  *
  * @param {string} noSummary
- * @param {string} str String summary
+ * @param {string} str String summary, link this: Klass.baz
  *   String body 1st line
  *   String body 2nd line
  * @param {string|array} mixed Mixed summary
  *   Mixed body 1st line
  *   Mixed body 2nd line
+ *   Link this: Klass.baz
  * @see Google http://www.google.com/
- * @see foo
  * @see Klass.prototype.foo
  * @see Klass.baz
- * @return {array} Return summary
+ * @return {array} Return summary, link this: Klass.baz
  *   Return body 1st line
  *   Return body 2nd line
+ *   Link this: Klass.baz
  */
 Klass.prototype.bar = function(noSummary, str, obj) {
 };
