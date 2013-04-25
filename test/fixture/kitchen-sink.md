@@ -56,4 +56,10 @@ Link this: `Klass.foo()`
 
 ### `{string} str`: String summary
 
+String body 1st line
+String body 2nd line
+
 ### `{string | array} mixed`: Mixed summary
+
+Mixed body 1st line
+Mixed body 2nd line
