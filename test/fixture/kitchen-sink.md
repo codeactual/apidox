@@ -8,11 +8,11 @@ Source: [test/fixture/kitchen-sink.js](test/fixture/kitchen-sink.js)
 
 - [exports.Klass](#exportsklass)
 - [exports.create](#exportscreate)
-- [exports.extend](#exportsextend)
+- [exports.extend](#exportsextendext)
 - [Klass](#klass)
 - [Klass.prototype.foo](#klassprototypefoo)
-- [Klass.prototype.bar](#klassprototypebar)
-- [Klass.baz](#klassbaz)
+- [Klass.prototype.bar](#klassprototypebarnosummary-str-mixed)
+- [Klass.baz](#klassbazarr)
 
 # exports.Klass()
 
@@ -68,7 +68,7 @@ Klass 2nd section:
 
 # Klass.prototype.foo()
 
-Foo summary, link this: [Klass.baz](#klassbaz)
+Foo summary, link this: [Klass.baz](#klassbazarr)
 Foo 2nd line
 
 Foo 1st section:
@@ -83,11 +83,11 @@ Foo 2nd section:
 
 # Klass.prototype.bar(noSummary, str, mixed)
 
-Bar summary, link this: [Klass.baz](#klassbaz)
+Bar summary, link this: [Klass.baz](#klassbazarr)
 
 Link this: [Klass.prototype.foo](#klassprototypefoo)
-Link this: [Klass.baz](#klassbaz)
-Don't double-link this: [Klass.baz](#klassbaz)
+Link this: [Klass.baz](#klassbazarr)
+Don't double-link this: [Klass.baz](#klassbazarr)
 
 ```js
 // Don't link this: Klass.baz
@@ -104,7 +104,7 @@ Don't double-link this: [Klass.baz](#klassbaz)
 
 ### `{string} noSummary`
 
-### `{string} str`: String summary, link this: [Klass.baz](#klassbaz)
+### `{string} str`: String summary, link this: [Klass.baz](#klassbazarr)
 
 String body 1st line
 String body 2nd line
@@ -113,21 +113,21 @@ String body 2nd line
 
 Mixed body 1st line
 Mixed body 2nd line
-Link this: [Klass.baz](#klassbaz)
+Link this: [Klass.baz](#klassbazarr)
 
 ## Return
 
-### `{array}`: Return summary, link this: [Klass.baz](#klassbaz)
+### `{array}`: Return summary, link this: [Klass.baz](#klassbazarr)
 
 Return body 1st line
 Return body 2nd line
-Link this: [Klass.baz](#klassbaz)
+Link this: [Klass.baz](#klassbazarr)
 
 ## See
 
 - [Google](http://www.google.com/)
 - [Klass.prototype.foo](#klassprototypefoo)
-- [Klass.baz](#klassbaz)
+- [Klass.baz](#klassbazarr)
 
 # Klass.baz(arr)
 

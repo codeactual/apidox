@@ -81,7 +81,7 @@ Klass.prototype.foo = function() {
  *
  * Link this: Klass.prototype.foo
  * Link this: Klass.baz
- * Don't double-link this: [Klass.baz](#klassbaz)
+ * Don't double-link this: [Klass.baz](#klassbazarr)
  *
  * ```js
  * // Don't link this: Klass.baz
