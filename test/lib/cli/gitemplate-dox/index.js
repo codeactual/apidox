@@ -10,7 +10,19 @@ describe('gitemplateDox cli', function() {
     this.resOK = {code: 0};
   });
 
-  it.skip('should do something', function() {
+  it.skip('should abort on missing --file', function() {
+  });
+
+  it.skip('should store --rootdir', function() {
+  });
+
+  it.skip('should store --file', function() {
+  });
+
+  it.skip('should parse the file', function() {
+  });
+
+  it.skip('should print the result', function() {
   });
 });
 
