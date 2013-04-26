@@ -8,11 +8,11 @@ describe('GitemplateDox', function() {
 
   beforeEach(function() {
     this.dox = gitemplateDox.create();
-    this.dox.set('rootdir', path.normalize(__dirname + '/../../..'));
+    this.dox.set('output', path.normalize(__dirname + '/../../..'));
   });
 
   it('should parse fixture', function() {
-    this.dox.set('file', fixture('kitchen-sink.js'));
+    this.dox.set('input', fixture('kitchen-sink.js'));
     this.dox.parse(fixture('kitchen-sink.js'));
 
     var expectedStr = T.fs.readFileSync(fixture('kitchen-sink.md')).toString();
