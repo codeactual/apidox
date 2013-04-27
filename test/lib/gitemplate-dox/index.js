@@ -8,14 +8,15 @@ describe('GitemplateDox', function() {
 
   beforeEach(function() {
     this.dox = gitemplateDox.create();
-    this.dox.set('output', path.normalize(__dirname + '/../../..'));
+    this.fixtureDir = __dirname + '/../../fixture';
+    process.chdir(this.fixtureDir);
+    this.dox.set('input', 'lib/kitchen-sink.js');
+    this.dox.set('output', 'docs/kitchen-sink.md');
+    this.dox.parse();
   });
 
   it('should parse fixture', function() {
-    this.dox.set('input', fixture('kitchen-sink.js'));
-    this.dox.parse(fixture('kitchen-sink.js'));
-
-    var expectedStr = T.fs.readFileSync(fixture('kitchen-sink.md')).toString();
+    var expectedStr = T.fs.readFileSync(this.fixtureDir + '/docs/kitchen-sink.md').toString();
     var actualStr = this.dox.convert();
 
     // split() for easier-to-read diff from mocha
@@ -25,4 +26,4 @@ describe('GitemplateDox', function() {
   });
 });
 
-function fixture(relPath) { return __dirname + '/../../fixture/' + relPath; }
+function fixture(relPath) { return + relPath; }

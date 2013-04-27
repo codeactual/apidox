@@ -2,7 +2,7 @@
 
 First comment summary
 
-Source: [test/fixture/kitchen-sink.js](test/fixture/kitchen-sink.js)
+Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)
 
 - [exports.Klass](#exportsklass)
 - [exports.create](#exportscreate)

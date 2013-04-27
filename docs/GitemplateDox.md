@@ -2,7 +2,7 @@
 
 Generate node module API markdown with dox
 
-Source: [../../lib/gitemplate-dox/index.js](../../lib/gitemplate-dox/index.js)
+Source: [lib/gitemplate-dox/index.js](../lib/gitemplate-dox/index.js)
 
 - [exports.GitemplateDox](#exportsgitemplatedox)
 - [exports.create](#exportscreate)
