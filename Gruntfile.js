@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         command: 'mocha --colors --recursive --reporter spec test/lib'
       },
       dox_lib: {
-        command: 'bin/gitemplate-dox --in lib/impulse-bin/index.js --out docs/GitemplateDox.md'
+        command: 'bin/gitemplate-dox --input lib/gitemplate-dox/index.js --output docs/GitemplateDox.md'
       }
     }
   });
