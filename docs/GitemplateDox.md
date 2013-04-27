@@ -1,8 +1,6 @@
-# Contents
-
 Generate node module API markdown with dox
 
-Source: [lib/gitemplate-dox/index.js](../lib/gitemplate-dox/index.js)
+_Source: [lib/gitemplate-dox/index.js](../lib/gitemplate-dox/index.js)_
 
 - [exports.GitemplateDox](#exportsgitemplatedox)
 - [exports.create](#exportscreate)
@@ -19,25 +17,27 @@ Source: [lib/gitemplate-dox/index.js](../lib/gitemplate-dox/index.js)
 
 Create a new GitemplateDox.
 
-## Return
+**Return:**
 
-### `{object}`
+`{object}`
 
 # exports.extend(ext)
 
 Extend GitemplateDox.prototype.
 
-## Parameters
+**Parameters:**
 
-### `{object} ext`
+- `{object} ext`
 
-## Return
+**Return:**
 
-### `{object}`: Merge result.
+`{object}`: Merge result.
 
 # GitemplateDox()
 
-Usage:
+GitemplateDox constructor.
+
+**Usage:**
 
 ```js
 var dox = require('gitemplate-dox').create();
@@ -48,12 +48,12 @@ var markdown = dox
   .convert();
 ```
 
-Configuration:
+**Configuration:**
 
 - `{string} [input]` Source file to read
 - `{string} [output]` Markdown file to write
 
-Properties:
+**Properties:**
 
 - `{array} [comments=[]]` Filtered dox-provided objects to convert
 - `{object} [fileComment={}]` First dox-provided comment found in the file
@@ -75,18 +75,14 @@ Properties:
 
 Parse the source file.
 
-## Parameters
+**Parameters:**
 
-### `{string} file`
-
-## See
-
-- GitemplateDox.prototype.parseComment
+- `{string} file`
 
 # GitemplateDox.prototype.convert()
 
 Convert comments to markdown.
 
-## Return
+**Return:**
 
-### `{string}`
+`{string}`
