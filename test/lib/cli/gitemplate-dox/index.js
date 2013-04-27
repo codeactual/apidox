@@ -10,8 +10,8 @@ describe('gitemplateDox cli', function() {
     this.handler = T.cli.gitemplateDox;
 
     this.markdown = 'fakeMarkdown';
-    this.doxStub = this.stubMany({}, ['set', 'parse', 'build']);
-    this.doxStub.build.returns(this.markdown);
+    this.doxStub = this.stubMany({}, ['set', 'parse', 'convert']);
+    this.doxStub.convert.returns(this.markdown);
     this.stub(gitemplateDox, 'create').returns(this.doxStub);
     this.writeStub = this.stub(require('fs'), 'writeFileSync');
 

@@ -66,12 +66,16 @@ module.exports = function(grunt) {
       test_lib: {
         options: mochaShelljsOpt,
         command: 'mocha --colors --recursive --reporter spec test/lib'
+      },
+      dox_lib: {
+        command: 'bin/gitemplate-dox --in lib/impulse-bin/index.js --out docs/GitemplateDox.md'
       }
     }
   });
 
   grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('dox', ['shell:dox_lib']);
   grunt.registerTask('build', ['default', 'shell:build']);
-  grunt.registerTask('dist', ['default', 'shell:dist', 'uglify:dist', 'shell:shrinkwrap']);
+  grunt.registerTask('dist', ['default', 'shell:dist', 'uglify:dist', 'shell:shrinkwrap', 'dox']);
   grunt.registerTask('test', ['build', 'shell:test_lib']);
 };

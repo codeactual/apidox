@@ -16,7 +16,7 @@ describe('GitemplateDox', function() {
     this.dox.parse(fixture('kitchen-sink.js'));
 
     var expectedStr = T.fs.readFileSync(fixture('kitchen-sink.md')).toString();
-    var actualStr = this.dox.build();
+    var actualStr = this.dox.convert();
 
     // split() for easier-to-read diff from mocha
     actualStr.split('\n').should.deep.equal(expectedStr.split('\n'));
