@@ -6,8 +6,9 @@ Generate node module API markdown with dox
 
 ## Example
 
-```js
-```
+    gitemplate-dox \
+      --input lib/gitemplate-dox/index.js \
+      --output docs/GitemplateDox.md
 
 ## Installation
 
@@ -15,9 +16,9 @@ Generate node module API markdown with dox
 
     npm install gitemplate-dox
 
-## GitemplateDox API
+## API Documentation
 
-[Documentation](docs/API.md)
+[GitemplateDox](docs/GitemplateDox.md)
 
 ## License
 
