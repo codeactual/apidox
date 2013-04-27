@@ -13,7 +13,7 @@ describe('gitemplateDox cli', function() {
     this.doxStub = this.stubMany({}, ['set', 'parse', 'build']);
     this.doxStub.build.returns(this.markdown);
     this.stub(gitemplateDox, 'create').returns(this.doxStub);
-    this.printStub = this.stub(require('util'), 'print');
+    this.writeStub = this.stub(require('fs'), 'writeFileSync');
 
     process.argv = ['node', '/to/script', '--input', 'foo', '--output', 'bar'];
   });
@@ -35,9 +35,9 @@ describe('gitemplateDox cli', function() {
     this.doxStub.parse.should.have.been.called;
   });
 
-  it('should print the result', function() {
+  it('should write the result', function() {
     this.bin.run(T.cli.provider, this.handler);
-    this.printStub.should.have.been.calledWithExactly(this.markdown);
+    this.writeStub.should.have.been.calledWithExactly('bar', this.markdown);
   });
 });
 
