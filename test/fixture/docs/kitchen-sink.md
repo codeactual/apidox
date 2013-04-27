@@ -1,8 +1,6 @@
-# Contents
-
 First comment summary
 
-Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)
+_Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)_
 
 - [exports.Klass](#exportsklass)
 - [exports.create](#exportscreate)
@@ -19,12 +17,12 @@ Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)
 constructor summary
 constructor 2nd line
 
-constructor 1st section:
+**constructor 1st section:**
 
 - `item`: Summary 1
 - `item`: Summary 2
 
-constructor 2nd section:
+**constructor 2nd section:**
 
 - `item`: Summary 1
 - `item`: Summary 2
@@ -33,33 +31,33 @@ constructor 2nd section:
 
 Create a new Klass() instance.
 
-## Return
+**Return:**
 
-### `{Klass}`
+`{Klass}`
 
 # exports.extend(ext)
 
 Extend `Klass.prototype`.
 
-## Parameters
+**Parameters:**
 
-### `{object} ext`: Methods to mix in.
+- `{object} ext`: Methods to mix in.
 
-## Return
+**Return:**
 
-### `{object}`: Merge result.
+`{object}`: Merge result.
 
 # Klass()
 
 Klass summary
 Klass 2nd line
 
-Klass 1st section:
+**Klass 1st section:**
 
 - `item`: Summary 1
 - `item`: Summary 2
 
-Klass 2nd section:
+**Klass 2nd section:**
 
 - `item`: Summary 1
 - `item`: Summary 2
@@ -69,12 +67,12 @@ Klass 2nd section:
 Foo summary, link this: [Klass.baz](#klassbazarr)
 Foo 2nd line
 
-Foo 1st section:
+**Foo 1st section:**
 
 - `item`: Summary 1
 - `item`: Summary 2
 
-Foo 2nd section:
+**Foo 2nd section:**
 
 - `item`: Summary 1
 - `item`: Summary 2
@@ -98,30 +96,29 @@ Don't double-link this: [Klass.baz](#klassbazarr)
 ` Don't link this: Klass.baz `
 `Don't link this: Klass.baz`
 
-## Parameters
+**Parameters:**
 
-### `{string} noSummary`
-
-### `{string} str`: String summary, link this: [Klass.baz](#klassbazarr)
+- `{string} noSummary`
+- `{string} str`: String summary, link this: [Klass.baz](#klassbazarr)
 
 String body 1st line
 String body 2nd line
 
-### `{string | array} mixed`: Mixed summary
+- `{string | array} mixed`: Mixed summary
 
 Mixed body 1st line
 Mixed body 2nd line
 Link this: [Klass.baz](#klassbazarr)
 
-## Return
+**Return:**
 
-### `{array}`: Return summary, link this: [Klass.baz](#klassbazarr)
+`{array}`: Return summary, link this: [Klass.baz](#klassbazarr)
 
 Return body 1st line
 Return body 2nd line
 Link this: [Klass.baz](#klassbazarr)
 
-## See
+**See:**
 
 - [Google](http://www.google.com/)
 - [Klass.prototype.foo](#klassprototypefoo)
@@ -133,10 +130,10 @@ Baz summary
 
 Baz description
 
-## Parameters
+**Parameters:**
 
-### `{array} arr`
+- `{array} arr`
 
-## Return
+**Return:**
 
-### `{array}`: Return summary
+`{array}`: Return summary
