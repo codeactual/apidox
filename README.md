@@ -6,6 +6,7 @@ Generate node module API markdown with dox
 
 ## Example
 
+    cd /path/to/proj/root
     gitemplate-dox \
       --input lib/gitemplate-dox/index.js \
       --output docs/GitemplateDox.md
