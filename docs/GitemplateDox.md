@@ -50,24 +50,24 @@ var markdown = dox
 
 **Configuration:**
 
-- `{string} [input]` Source file to read
-- `{string} [output]` Markdown file to write
+- `{string} input` Source file to read
+- `{string} output` Markdown file to write
 
 **Properties:**
 
-- `{array} [comments=[]]` Filtered dox-provided objects to convert
-- `{object} [fileComment={}]` First dox-provided comment found in the file
-- `{array} [lines=[]]` Markdown lines
-- `{object} [params={}]` Collected `@param` meta indexed by method name
+- `{array} comments` Filtered dox-provided objects to convert
+- `{object} fileComment` First dox-provided comment found in the file
+- `{array} lines` Markdown lines
+- `{object} params` Collected `@param` meta indexed by method name
   - `{array} types` Type names
   - `{string} description` First line
   - `{array} overflow` Additional lines
-- `{object} [returns={}]` Collected `@return` metadata indexed by method name
+- `{object} returns` Collected `@return` metadata indexed by method name
   - `{array} types` Type names
   - `{string} description` First line
   - `{array} overflow` Additional lines
-- `{array} [sees=[]]` Collected `@see` lines
-- `{array} [toc=[]]` Collected table-of-contents metadata objects
+- `{array} sees` Collected `@see` lines
+- `{array} toc` Collected table-of-contents metadata objects
   - `{string} title` Link title
   - `{string} url` Link URL
 
