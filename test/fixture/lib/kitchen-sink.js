@@ -101,6 +101,9 @@ Klass.prototype.foo = function() {
  *   String body 1st line
  *   String body 2nd line
  * @param {string|array} mixed Mixed summary
+ * * Mixed item 1
+ * * Mixed item 2
+ *
  *   Mixed body 1st line
  *   Mixed body 2nd line
  *   Link this: Klass.baz
@@ -108,6 +111,9 @@ Klass.prototype.foo = function() {
  * @see Klass.prototype.foo
  * @see Klass.baz
  * @return {array} Return summary, link this: Klass.baz
+ * * Return item 1
+ * * Return item 2
+ *
  *   Return body 1st line
  *   Return body 2nd line
  *   Link this: Klass.baz
@@ -121,7 +127,11 @@ Klass.prototype.bar = function(noSummary, str, obj) {
  * Baz description
  *
  * @param {array} arr
+ * - Array item 1
+ * - Array item 2
  * @return {array} Return summary
+ * - Return item 1
+ * - Return item 2
  */
 Klass.baz = function(arr) {
 };
