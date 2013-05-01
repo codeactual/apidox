@@ -44,6 +44,7 @@ var util = require('util');
 
 /**
  * Klass summary
+ *
  * Klass 2nd line
  *
  * Klass 1st section:
@@ -61,6 +62,7 @@ function Klass() {
 
 /**
  * Foo summary, link this: Klass.baz
+ *
  * Foo 2nd line
  *
  * Foo 1st section:
