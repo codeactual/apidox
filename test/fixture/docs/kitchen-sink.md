@@ -2,19 +2,19 @@ First comment summary
 
 _Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)_
 
-- [exports.Klass](#exportsklass)
+- [exports.Some_Klass](#exportssome_klass)
 - [exports.create](#exportscreate)
 - [exports.extend](#exportsextendext)
-- [Klass](#klass)
-- [Klass.prototype.foo](#klassprototypefoo)
-- [Klass.prototype.bar](#klassprototypebarnosummary-str-mixed)
-- [Klass.baz](#klassbazarr)
+- [Some_Klass](#some_klass)
+- [Some_Klass.prototype.fooFoo09](#some_klassprototypefoofoo09)
+- [Some_Klass.prototype.bar](#some_klassprototypebarnosummary-str-mixed)
+- [Some_Klass.baz](#some_klassbazarr)
 
-# exports.Klass()
+# exports.Some_Klass()
 
-> Reference to [Klass](#klass).
+> Reference to [Some_Klass](#some_klass).
 
-[Klass](#klass) (should be linked)
+[Some_Klass](#some_klass) (should be linked)
 
 constructor summary
 constructor 2nd line
@@ -31,15 +31,15 @@ constructor 2nd line
 
 # exports.create()
 
-> Create a new [Klass](#klass) instance.
+> Create a new [Some_Klass](#some_klass) instance.
 
 **Return:**
 
-`{Klass}`
+`{Some_Klass}`
 
 # exports.extend(ext)
 
-> Extend `Klass.prototype`.
+> Extend `Some_Klass.prototype`.
 
 **Parameters:**
 
@@ -49,25 +49,25 @@ constructor 2nd line
 
 `{object}` Merge result.
 
-# Klass()
+# Some_Klass()
 
-> Klass summary
+> Some_Klass summary
 
-Klass 2nd line
+Some_Klass 2nd line
 
-**Klass 1st section:**
-
-- `item`: Summary 1
-- `item`: Summary 2
-
-**Klass 2nd section:**
+**Some_Klass 1st section:**
 
 - `item`: Summary 1
 - `item`: Summary 2
 
-# Klass.prototype.foo()
+**Some_Klass 2nd section:**
 
-> Foo summary, link this: [Klass.baz](#klassbazarr)
+- `item`: Summary 1
+- `item`: Summary 2
+
+# Some_Klass.prototype.fooFoo09()
+
+> Foo summary, link this: [Some_Klass.baz](#some_klassbazarr)
 
 Foo 2nd line
 
@@ -81,29 +81,29 @@ Foo 2nd line
 - `item`: Summary 1
 - `item`: Summary 2
 
-# Klass.prototype.bar(noSummary, str, mixed)
+# Some_Klass.prototype.bar(noSummary, str, mixed)
 
-> Bar summary, link this: [Klass.baz](#klassbazarr)
+> Bar summary, link this: [Some_Klass.baz](#some_klassbazarr)
 
-Link this: [Klass.prototype.foo](#klassprototypefoo)
-Link this: [Klass.baz](#klassbazarr)
-Don't double-link this: [Klass.baz](#klassbazarr)
+Link this: [Some_Klass.prototype.fooFoo09](#some_klassprototypefoofoo09)
+Link this: [Some_Klass.baz](#some_klassbazarr)
+Don't double-link this: [Some_Klass.baz](#some_klassbazarr)
 
 ```js
-// Don't link this: Klass.baz
+// Don't link this: Some_Klass.baz
 ```
 
 ```
-// Don't link this: Klass.baz
+// Don't link this: Some_Klass.baz
 ```
 
-` Don't link this: Klass.baz `
-`Don't link this: Klass.baz`
+` Don't link this: Some_Klass.baz `
+`Don't link this: Some_Klass.baz`
 
 **Parameters:**
 
 - `{string} noSummary`
-- `{string} str` String summary, link this: [Klass.baz](#klassbazarr)
+- `{string} str` String summary, link this: [Some_Klass.baz](#some_klassbazarr)
 
 String body 1st line
 String body 2nd line
@@ -115,26 +115,26 @@ String body 2nd line
 
 Mixed body 1st line
 Mixed body 2nd line
-Link this: [Klass.baz](#klassbazarr)
+Link this: [Some_Klass.baz](#some_klassbazarr)
 
 **Return:**
 
-`{array}` Return summary, link this: [Klass.baz](#klassbazarr)
+`{array}` Return summary, link this: [Some_Klass.baz](#some_klassbazarr)
 
 * Return item 1
 * Return item 2
 
 Return body 1st line
 Return body 2nd line
-Link this: [Klass.baz](#klassbazarr)
+Link this: [Some_Klass.baz](#some_klassbazarr)
 
 **See:**
 
 - [Google](http://www.google.com/)
-- [Klass.prototype.foo](#klassprototypefoo)
-- [Klass.baz](#klassbazarr)
+- [Some_Klass.prototype.fooFoo09](#some_klassprototypefoofoo09)
+- [Some_Klass.baz](#some_klassbazarr)
 
-# Klass.baz(arr)
+# Some_Klass.baz(arr)
 
 > Baz summary
 

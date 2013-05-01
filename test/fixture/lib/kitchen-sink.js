@@ -8,9 +8,9 @@
 'use strict';
 
 /**
- * Reference to Klass.
+ * Reference to Some_Klass.
  *
- * Klass (should be linked)
+ * Some_Klass (should be linked)
  *
  * constructor summary
  * constructor 2nd line
@@ -25,45 +25,45 @@
  * - `item`: Summary 1
  * - `item`: Summary 2
  */
-exports.Klass = Klass;
+exports.Some_Klass = Some_Klass;
 
 /**
- * Create a new Klass instance.
+ * Create a new Some_Klass instance.
  *
- * @return {Klass}
+ * @return {Some_Klass}
  */
-exports.create = function() { return new Klass(); }
+exports.create = function() { return new Some_Klass(); }
 
 /**
- * Extend `Klass.prototype`.
+ * Extend `Some_Klass.prototype`.
  *
  * @param {object} ext Methods to mix in.
  * @return {object} Merge result.
  */
-exports.extend = function(ext) { return extend(Klass.prototype, ext); };
+exports.extend = function(ext) { return extend(Some_Klass.prototype, ext); };
 
 var util = require('util');
 
 /**
- * Klass summary
+ * Some_Klass summary
  *
- * Klass 2nd line
+ * Some_Klass 2nd line
  *
- * Klass 1st section:
+ * Some_Klass 1st section:
  *
  * - `item`: Summary 1
  * - `item`: Summary 2
  *
- * Klass 2nd section:
+ * Some_Klass 2nd section:
  *
  * - `item`: Summary 1
  * - `item`: Summary 2
  */
-function Klass() {
+function Some_Klass() {
 }
 
 /**
- * Foo summary, link this: Klass.baz
+ * Foo summary, link this: Some_Klass.baz
  *
  * Foo 2nd line
  *
@@ -77,29 +77,29 @@ function Klass() {
  * - `item`: Summary 1
  * - `item`: Summary 2
  */
-Klass.prototype.foo = function() {
+Some_Klass.prototype.fooFoo09 = function() {
 };
 
 /**
- * Bar summary, link this: Klass.baz
+ * Bar summary, link this: Some_Klass.baz
  *
- * Link this: Klass.prototype.foo
- * Link this: Klass.baz
- * Don't double-link this: [Klass.baz](#klassbazarr)
+ * Link this: Some_Klass.prototype.fooFoo09
+ * Link this: Some_Klass.baz
+ * Don't double-link this: [Some_Klass.baz](#some_klassbazarr)
  *
  * ```js
- * // Don't link this: Klass.baz
+ * // Don't link this: Some_Klass.baz
  * ```
  *
  * ```
- * // Don't link this: Klass.baz
+ * // Don't link this: Some_Klass.baz
  * ```
  *
- * ` Don't link this: Klass.baz `
- * `Don't link this: Klass.baz`
+ * ` Don't link this: Some_Klass.baz `
+ * `Don't link this: Some_Klass.baz`
  *
  * @param {string} noSummary
- * @param {string} str String summary, link this: Klass.baz
+ * @param {string} str String summary, link this: Some_Klass.baz
  *   String body 1st line
  *   String body 2nd line
  * @param {string|array} mixed Mixed summary
@@ -108,19 +108,19 @@ Klass.prototype.foo = function() {
  *
  *   Mixed body 1st line
  *   Mixed body 2nd line
- *   Link this: Klass.baz
+ *   Link this: Some_Klass.baz
  * @see Google http://www.google.com/
- * @see Klass.prototype.foo
- * @see Klass.baz
- * @return {array} Return summary, link this: Klass.baz
+ * @see Some_Klass.prototype.fooFoo09
+ * @see Some_Klass.baz
+ * @return {array} Return summary, link this: Some_Klass.baz
  * * Return item 1
  * * Return item 2
  *
  *   Return body 1st line
  *   Return body 2nd line
- *   Link this: Klass.baz
+ *   Link this: Some_Klass.baz
  */
-Klass.prototype.bar = function(noSummary, str, obj) {
+Some_Klass.prototype.bar = function(noSummary, str, obj) {
 };
 
 /**
@@ -135,7 +135,7 @@ Klass.prototype.bar = function(noSummary, str, obj) {
  * - Return item 1
  * - Return item 2
  */
-Klass.baz = function(arr) {
+Some_Klass.baz = function(arr) {
 };
 
 /**
