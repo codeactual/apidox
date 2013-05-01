@@ -11,11 +11,11 @@ _Source: [lib/gitemplate-dox/index.js](../lib/gitemplate-dox/index.js)_
 
 # exports.GitemplateDox()
 
-> [GitemplateDox](#gitemplatedox) constructor.
+> Reference to [GitemplateDox](#gitemplatedox).
 
 # exports.create()
 
-> Create a new GitemplateDox.
+> Create a new [GitemplateDox](#gitemplatedox).
 
 **Return:**
 
@@ -23,7 +23,7 @@ _Source: [lib/gitemplate-dox/index.js](../lib/gitemplate-dox/index.js)_
 
 # exports.extend(ext)
 
-> Extend GitemplateDox.prototype.
+> Extend [GitemplateDox](#gitemplatedox).prototype.
 
 **Parameters:**
 

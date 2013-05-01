@@ -12,7 +12,9 @@ _Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)_
 
 # exports.Klass()
 
-> [Klass](#klass) constructor.
+> Reference to [Klass](#klass).
+
+[Klass](#klass) (should be linked)
 
 constructor summary
 constructor 2nd line
@@ -29,7 +31,7 @@ constructor 2nd line
 
 # exports.create()
 
-> Create a new Klass() instance.
+> Create a new [Klass](#klass) instance.
 
 **Return:**
 

@@ -8,7 +8,9 @@
 'use strict';
 
 /**
- * [Klass](#klass) constructor.
+ * Reference to Klass.
+ *
+ * Klass (should be linked)
  *
  * constructor summary
  * constructor 2nd line
@@ -26,7 +28,7 @@
 exports.Klass = Klass;
 
 /**
- * Create a new Klass() instance.
+ * Create a new Klass instance.
  *
  * @return {Klass}
  */
