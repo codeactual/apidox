@@ -43,11 +43,15 @@ constructor 2nd line
 
 **Parameters:**
 
-- `{object} ext` Methods to mix in.
+- `{object} ext` Methods to mix in, escape this: &lt;&gt;&amp;
 
 **Return:**
 
-`{object}` Merge result.
+`{object}` Merge result, escape this: &lt;&gt;&amp;
+
+**See:**
+
+- Escape this: &lt;&gt;&amp;
 
 # Some_Klass()
 

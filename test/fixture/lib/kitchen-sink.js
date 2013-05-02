@@ -37,8 +37,9 @@ exports.create = function() { return new Some_Klass(); }
 /**
  * Extend `Some_Klass.prototype`.
  *
- * @param {object} ext Methods to mix in.
- * @return {object} Merge result.
+ * @param {object} ext Methods to mix in, escape this: <>&
+ * @return {object} Merge result, escape this: <>&
+ * @see Escape this: <>&
  */
 exports.extend = function(ext) { return extend(Some_Klass.prototype, ext); };
 
