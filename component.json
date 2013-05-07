@@ -3,7 +3,15 @@
   "repo": "codeactual/gitemplate-dox",
   "description": "Generate node module API markdown with dox",
   "version": "0.1.0",
-  "keywords": [],
+  "keywords": [
+    "dox",
+    "gitemplate",
+    "documentation",
+    "generator",
+    "jsdocs",
+    "markdown",
+    "api docs"
+  ],
   "dependencies": {
     "visionmedia/configurable.js": "f87ca5f",
     "codeactual/extend": "0.1.0"

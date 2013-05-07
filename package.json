@@ -4,7 +4,15 @@
   "version": "0.1.0",
   "main": "index.js",
   "bin": "./bin/gitemplate-dox",
-  "keywords": [],
+  "keywords": [
+    "dox",
+    "gitemplate",
+    "documentation",
+    "generator",
+    "jsdocs",
+    "markdown",
+    "api docs"
+  ],
   "contributors": [
     {
       "name": "David Smith",
