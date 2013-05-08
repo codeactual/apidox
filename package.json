@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "commander": "~1.1.1",
-    "impulse-bin": "~0.1.0",
-    "outer-shelljs": "~0.3.0",
+    "impulse-bin": "~0.1.2",
+    "outer-shelljs": "~0.3.3",
     "dox": "~0.4.3"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "mocha": "~1.9.0",
     "sinon": "~1.6.0",
     "sinon-chai": "~2.3.1",
-    "sinon-doublist": "~0.3.0"
+    "sinon-doublist": "~0.3.3"
   },
   "scripts": {
     "test": "grunt test"
