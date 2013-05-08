@@ -1,1 +1,1 @@
-module.exports = require('./lib/gitemplate-dox');
+module.exports = require('./lib/apidox');

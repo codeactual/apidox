@@ -8,5 +8,5 @@
 
 require('impulse-bin').create().run(
   require('commander'),
-  require('../lib/cli/gitemplate-dox')
+  require('../lib/cli/apidox')
 );

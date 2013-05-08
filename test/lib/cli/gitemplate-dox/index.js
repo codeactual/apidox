@@ -1,18 +1,18 @@
 /*jshint node:true*/
 var T = require('../../../cli');
-var gitemplateDox = T.gitemplateDox;
+var apidox = T.apidox;
 
-describe('gitemplateDox cli', function() {
+describe('apidox cli', function() {
   'use strict';
 
   beforeEach(function() {
     this.bin = T.cli.impulseBin.create();
-    this.handler = T.cli.gitemplateDox;
+    this.handler = T.cli.apidox;
 
     this.markdown = 'fakeMarkdown';
     this.doxStub = this.stubMany({}, ['set', 'parse', 'convert']);
     this.doxStub.convert.returns(this.markdown);
-    this.stub(gitemplateDox, 'create').returns(this.doxStub);
+    this.stub(apidox, 'create').returns(this.doxStub);
     this.writeStub = this.stub(require('fs'), 'writeFileSync');
 
     process.argv = ['node', '/to/script', '--input', 'foo', '--output', 'bar'];

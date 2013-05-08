@@ -1,25 +1,25 @@
-# gitemplate-dox
+# apidox
 
-Generate node module API markdown with dox
+Generate node.js API markdown with dox
 
-[![Build Status](https://travis-ci.org/codeactual/gitemplate-dox.png)](https://travis-ci.org/codeactual/gitemplate-dox)
+[![Build Status](https://travis-ci.org/codeactual/apidox.png)](https://travis-ci.org/codeactual/apidox)
 
 ## Example
 
     cd /path/to/proj/root
-    gitemplate-dox \
-      --input lib/gitemplate-dox/index.js \
-      --output docs/GitemplateDox.md
+    apidox \
+      --input lib/apidox/index.js \
+      --output docs/ApiDox.md
 
 ## Installation
 
-### [NPM](https://npmjs.org/package/gitemplate-dox)
+### [NPM](https://npmjs.org/package/apidox)
 
-    npm install gitemplate-dox
+    npm install apidox
 
 ## API Documentation
 
-[GitemplateDox](docs/GitemplateDox.md)
+[ApiDox](docs/ApiDox.md)
 
 ## License
 

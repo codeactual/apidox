@@ -46,7 +46,7 @@ module.exports = function(grunt) {
           beautify: true
         },
         files: {
-          'dist/gitemplate-dox.js': 'dist/gitemplate-dox.js'
+          'dist/apidox.js': 'dist/apidox.js'
         }
       }
     },
@@ -55,17 +55,17 @@ module.exports = function(grunt) {
         failOnError: true
       },
       build: {
-        command: 'component install --dev && component build --standalone gitemplateDox --name gitemplate-dox --out dist --dev'
+        command: 'component install --dev && component build --standalone apidox --name apidox --out dist --dev'
       },
       dist: {
-        command: 'component build --standalone gitemplateDox --name gitemplate-dox --out dist'
+        command: 'component build --standalone apidox --name apidox --out dist'
       },
       test_lib: {
         options: mochaShelljsOpt,
         command: 'mocha --colors --recursive --reporter spec test/lib'
       },
       dox_lib: {
-        command: 'bin/gitemplate-dox --input lib/gitemplate-dox/index.js --output docs/GitemplateDox.md'
+        command: 'bin/apidox --input lib/apidox/index.js --output docs/ApiDox.md'
       }
     }
   });

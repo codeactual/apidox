@@ -1,13 +1,13 @@
 /*jshint node:true*/
 var T = require('../..');
-var gitemplateDox = T.gitemplateDox;
+var apidox = T.apidox;
 var path = require('path');
 
-describe('GitemplateDox', function() {
+describe('ApiDox', function() {
   'use strict';
 
   beforeEach(function() {
-    this.dox = gitemplateDox.create();
+    this.dox = apidox.create();
     this.fixtureDir = __dirname + '/../../fixture';
     process.chdir(this.fixtureDir);
     this.dox.set('input', 'lib/kitchen-sink.js');

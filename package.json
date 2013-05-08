@@ -1,9 +1,9 @@
 {
-  "name": "gitemplate-dox",
-  "description": "Generate node module API markdown with dox",
-  "version": "0.1.1",
+  "name": "apidox",
+  "description": "Generate node.js API markdown with dox",
+  "version": "0.2.0",
   "main": "index.js",
-  "bin": "./bin/gitemplate-dox",
+  "bin": "./bin/apidox",
   "keywords": [
     "dox",
     "gitemplate",
@@ -20,12 +20,12 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/codeactual/gitemplate-dox/issues"
+    "url": "https://github.com/codeactual/apidox/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codeactual/gitemplate-dox.git"
+    "url": "https://github.com/codeactual/apidox.git"
   },
   "dependencies": {
     "commander": "~1.1.1",

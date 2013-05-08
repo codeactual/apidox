@@ -1,6 +1,6 @@
 var T = module.exports = require('./index');
 T.cli = {
-  gitemplateDox: require('../lib/cli/gitemplate-dox'),
+  apidox: require('../lib/cli/apidox'),
   impulseBin: require('impulse-bin'),
   provider: require('commander')
 };

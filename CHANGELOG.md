@@ -1,3 +1,7 @@
+# 0.2.0
+
+* Rename project to `apidox`.
+
 # 0.1.1
 
 * Remove NPM shrinkwrapping.

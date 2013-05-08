@@ -12,7 +12,7 @@ T.sinonDoublist = require('sinon-doublist');
 
 T.requireComponent = require('../lib/component/require');
 
-T.gitemplateDox = require('..');
+T.apidox = require('..');
 
 beforeEach(function() {
   T.sinonDoublist(T.sinon, this);

@@ -1,8 +1,8 @@
 {
-  "name": "gitemplate-dox",
-  "repo": "codeactual/gitemplate-dox",
-  "description": "Generate node module API markdown with dox",
-  "version": "0.1.1",
+  "name": "apidox",
+  "repo": "codeactual/apidox",
+  "description": "Generate node.js API markdown with dox",
+  "version": "0.2.0",
   "keywords": [
     "dox",
     "gitemplate",
