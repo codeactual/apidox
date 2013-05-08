@@ -1,6 +1,7 @@
 # 0.2.0
 
 * Rename project to `apidox`.
+* Fix circular NPM dependencies.
 
 # 0.1.1
 

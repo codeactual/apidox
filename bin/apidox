@@ -6,7 +6,10 @@
  * Copyright (c) 2013 David Smith <https://github.com/codeactual/>
  */
 
-require('impulse-bin').create().run(
-  require('commander'),
-  require('../lib/cli/apidox')
-);
+var commander = require('commander');
+commander
+    .option('-i, --input <file>', 'Source file to read', String)
+    .option('-o, --output <file>', 'Markdown file to write', String)
+    .parse(process.argv);
+
+require('../lib/cli/apidox')(commander);

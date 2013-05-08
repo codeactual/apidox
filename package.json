@@ -29,8 +29,6 @@
   },
   "dependencies": {
     "commander": "~1.1.1",
-    "impulse-bin": "~0.1.2",
-    "outer-shelljs": "~0.3.3",
     "dox": "~0.4.3"
   },
   "devDependencies": {
