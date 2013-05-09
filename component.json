@@ -1,7 +1,7 @@
 {
   "name": "apidox",
   "repo": "codeactual/apidox",
-  "description": "Generate node.js API markdown with dox",
+  "description": "Generate node.js module API markdown with dox",
   "version": "0.2.1",
   "keywords": [
     "dox",
