@@ -1,3 +1,7 @@
+# 0.2.2
+
+* fix(param): Remove leading newline from sub-item set
+
 # 0.2.1
 
 * Fix circular NPM dependencies.
