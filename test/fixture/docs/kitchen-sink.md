@@ -113,7 +113,6 @@ String body 1st line
 String body 2nd line
 
 - `{string | array} mixed` Mixed summary
-
   * Mixed item 1
   * Mixed item 2
 
@@ -147,7 +146,6 @@ Baz description
 **Parameters:**
 
 - `{array} arr`
-
   - Array item 1
   - Array item 2
 
