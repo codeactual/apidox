@@ -17,7 +17,7 @@
  *
  * constructor 1st section:
  *
- * - `item`: Summary 1
+ * - `item`: Summary 1 Some_Klass
  * - `item`: Summary 2
  *
  * constructor 2nd section:
