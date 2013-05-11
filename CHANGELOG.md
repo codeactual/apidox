@@ -1,6 +1,7 @@
 # 0.2.2
 
 * fix(param): Remove leading newline from sub-item set
+* fix(markdown): Add missing HTML escaping in method summaries, descriptions, `@param`, `@return`.
 
 # 0.2.1
 
