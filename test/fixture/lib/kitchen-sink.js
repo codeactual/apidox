@@ -86,7 +86,7 @@ Some_Klass.prototype.fooFoo09 = function() {
  *
  * Link this: Some_Klass.prototype.fooFoo09
  * Link this: Some_Klass.baz
- * Don't double-link this: [Some_Klass.baz](#some_klassbazarr)
+ * Don't double-link this: [Some_Klass.baz](#some_klassbazstr-arr)
  *
  * ```js
  * // Don't link this: Some_Klass.baz
@@ -125,16 +125,24 @@ Some_Klass.prototype.bar = function(noSummary, str, obj) {
 };
 
 /**
- * Baz summary
+ * Baz summary `<html>` <html>
  *
  * Baz description
  *
- * @param {array} arr
+ * Escape this: <html>
+ * Don't escape this: `<html>`
+ *
+ * @param {string} str String summary <html>
+ * @param {array} arr Array summary `<html>`
  * - Array item 1
  * - Array item 2
- * @return {array} Return summary
+ * - Array item `<html>`
+ * - Array item <html>
+ * @return {array} Return summary `<html>` <html>
  * - Return item 1
  * - Return item 2
+ * - Return item `<html>`
+ * - Return item <html>
  */
 Some_Klass.baz = function(arr) {
 };
