@@ -2,11 +2,11 @@ Generate node.js API markdown with dox
 
 _Source: [lib/apidox/index.js](../lib/apidox/index.js)_
 
-- [exports.ApiDox](#exportsapidox)
+- <a name="toc--exports"></a>[exports.ApiDox](#exportsapidox)
 - [exports.create](#exportscreate)
 - [exports.extend](#exportsextendext)
-- [ApiDox](#apidox)
-- [ApiDox.prototype.parse](#apidoxprototypeparsefile)
+- <a name="toc--apidox"></a>[ApiDox](#apidox)
+- <a name="toc--apidoxprototype"></a>[ApiDox.prototype.parse](#apidoxprototypeparsefile)
 - [ApiDox.prototype.convert](#apidoxprototypeconvert)
 
 <a name="exports"></a>

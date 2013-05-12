@@ -2,11 +2,11 @@ First comment summary
 
 _Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)_
 
-- [exports.Some_Klass](#exportssome_klass)
+- <a name="toc--exports"></a>[exports.Some_Klass](#exportssome_klass)
 - [exports.create](#exportscreate)
 - [exports.extend](#exportsextendext)
-- [Some_Klass](#some_klass)
-- [Some_Klass.prototype.fooFoo09](#some_klassprototypefoofoo09)
+- <a name="toc--some_klass"></a>[Some_Klass](#some_klass)
+- <a name="toc--some_klassprototype"></a>[Some_Klass.prototype.fooFoo09](#some_klassprototypefoofoo09)
 - [Some_Klass.prototype.bar](#some_klassprototypebarnosummary-str-mixed)
 - [Some_Klass.baz](#some_klassbazstr-arr)
 
