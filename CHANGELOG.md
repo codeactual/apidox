@@ -1,3 +1,9 @@
+# 0.3.0
+
+* feat(markdown): Add anchors before parent object's (`Klass.prototype`) heading.
+* feat(markdown): Add anchors before parent object's TOC entry.
+* feat(markdown): Add links below each method section to TOC and parent object's TOC entry.
+
 # 0.2.2
 
 * fix(param): Remove leading newline from sub-item set

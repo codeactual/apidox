@@ -2,7 +2,7 @@
   "name": "apidox",
   "repo": "codeactual/apidox",
   "description": "Generate node.js module API markdown with dox",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "keywords": [
     "dox",
     "gitemplate",
