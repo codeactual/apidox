@@ -9,6 +9,8 @@ _Source: [lib/apidox/index.js](../lib/apidox/index.js)_
 - [ApiDox.prototype.parse](#apidoxprototypeparsefile)
 - [ApiDox.prototype.convert](#apidoxprototypeconvert)
 
+<a name="exports"></a>
+
 # exports.ApiDox()
 
 > Reference to [ApiDox](#apidox).
@@ -56,6 +58,7 @@ var markdown = dox
 **Properties:**
 
 - `{array} comments` Filtered dox-provided objects to convert
+- `{string curSection` Current section being converted, ex. 'Klass.prototype'.
 - `{object} fileComment` First dox-provided comment found in the file
 - `{array} lines` Markdown lines
 - `{object} params` Collected `@param` meta indexed by method name
@@ -70,6 +73,8 @@ var markdown = dox
 - `{array} toc` Collected table-of-contents metadata objects
   - `{string} title` Link title
   - `{string} url` Link URL
+
+<a name="apidoxprototype"></a>
 
 # ApiDox.prototype.parse(file)
 

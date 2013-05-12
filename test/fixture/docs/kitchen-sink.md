@@ -10,6 +10,8 @@ _Source: [lib/kitchen-sink.js](../lib/kitchen-sink.js)_
 - [Some_Klass.prototype.bar](#some_klassprototypebarnosummary-str-mixed)
 - [Some_Klass.baz](#some_klassbazstr-arr)
 
+<a name="exports"></a>
+
 # exports.Some_Klass()
 
 > Reference to [Some_Klass](#some_klass).
@@ -68,6 +70,8 @@ Some_Klass 2nd line
 
 - `item`: Summary 1
 - `item`: Summary 2
+
+<a name="some_klassprototype"></a>
 
 # Some_Klass.prototype.fooFoo09()
 
