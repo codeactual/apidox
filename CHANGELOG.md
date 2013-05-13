@@ -1,3 +1,7 @@
+# 0.3.1
+
+feat(markdown): Add anchors to intermediate obj paths
+
 # 0.3.0
 
 * feat(markdown): Add anchors before parent object's (`Klass.prototype`) heading.
