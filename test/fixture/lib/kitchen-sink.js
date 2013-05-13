@@ -147,6 +147,24 @@ Some_Klass.prototype.bar = function(noSummary, str, obj) {
 Some_Klass.baz = function(arr) {
 };
 
+Some_Klass.baz.bat = {sync: {}, async: {}};
+
+/**
+ * Async run summary
+ *
+ * Async run description
+ */
+Some_Klass.baz.bat.async.run = function() {
+};
+
+/**
+ * Sync run summary
+ *
+ * Sync run description
+ */
+Some_Klass.baz.bat.sync.run = function() {
+};
+
 /**
  * Test @api private
  *

@@ -4,12 +4,12 @@ _Source: [lib/apidox/index.js](../lib/apidox/index.js)_
 
 <a name="tableofcontents"></a>
 
-- <a name="toc_exports"></a>[exports.ApiDox](#exportsapidox)
-- [exports.create](#exportscreate)
-- [exports.extend](#exportsextendext)
+- <a name="toc_exportsapidox"></a><a name="toc_exports"></a>[exports.ApiDox](#exportsapidox)
+- <a name="toc_exportscreate"></a>[exports.create](#exportscreate)
+- <a name="toc_exportsextendext"></a>[exports.extend](#exportsextendext)
 - <a name="toc_apidox"></a>[ApiDox](#apidox)
-- <a name="toc_apidoxprototype"></a>[ApiDox.prototype.parse](#apidoxprototypeparsefile)
-- [ApiDox.prototype.convert](#apidoxprototypeconvert)
+- <a name="toc_apidoxprototypeparsefile"></a><a name="toc_apidoxprototype"></a>[ApiDox.prototype.parse](#apidoxprototypeparsefile)
+- <a name="toc_apidoxprototypeconvert"></a>[ApiDox.prototype.convert](#apidoxprototypeconvert)
 
 <a name="exports"></a>
 
@@ -65,6 +65,8 @@ var markdown = dox
 
 **Properties:**
 
+- `{object} anchors` Keys are object paths which already have anchors
+  - For duplicate prevention
 - `{array} comments` Filtered dox-provided objects to convert
 - `{string curSection` Current section being converted, ex. 'Klass.prototype'.
 - `{object} fileComment` First dox-provided comment found in the file
