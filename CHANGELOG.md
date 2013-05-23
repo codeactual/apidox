@@ -1,6 +1,7 @@
 # 0.3.1
 
-feat(markdown): Add anchors to intermediate obj paths
+* feat(markdown): Add anchors to intermediate obj paths
+* chore(npm): Upgrade outdated dev dependencies
 
 # 0.3.0
 

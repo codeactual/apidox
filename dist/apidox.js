@@ -132,7 +132,9 @@
         };
     });
     require.alias("visionmedia-configurable.js/index.js", "apidox/deps/configurable.js/index.js");
+    require.alias("visionmedia-configurable.js/index.js", "configurable.js/index.js");
     require.alias("codeactual-extend/index.js", "apidox/deps/extend/index.js");
+    require.alias("codeactual-extend/index.js", "extend/index.js");
     require.alias("apidox/lib/component/main.js", "apidox/index.js");
     if (typeof exports == "object") {
         module.exports = require("apidox");
@@ -141,6 +143,6 @@
             return require("apidox");
         });
     } else {
-        window["apidox"] = require("apidox");
+        this["apidox"] = require("apidox");
     }
 })();
