@@ -32,7 +32,7 @@ exports.Some_Klass = Some_Klass;
  *
  * @return {Some_Klass}
  */
-exports.create = function() { return new Some_Klass(); }
+exports.create = function() { return new Some_Klass(); };
 
 /**
  * Extend `Some_Klass.prototype`.
@@ -41,7 +41,7 @@ exports.create = function() { return new Some_Klass(); }
  * @return {object} Merge result, escape this: <>&
  * @see Escape this: <>&
  */
-exports.extend = function(ext) { return extend(Some_Klass.prototype, ext); };
+exports.extend = function(ext) { };
 
 var util = require('util');
 
@@ -170,4 +170,4 @@ Some_Klass.baz.bat.sync.run = function() {
  *
  * @api private
  */
-function klassNoOp() {};
+function klassNoOp() {}
