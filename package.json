@@ -42,7 +42,7 @@
     "sinon": "~1.7.2",
     "sinon-chai": "~2.4.0",
     "sinon-doublist": "~0.4.0",
-    "grunt-horde": "~0.2.1",
+    "grunt-horde": "~0.3.0",
     "node-component-grunt": "git://github.com/codeactual/node-component-grunt.git"
   },
   "scripts": {
