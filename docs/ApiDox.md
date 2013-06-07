@@ -96,6 +96,10 @@ var markdown = dox
 
 - `{string} file`
 
+**Return:**
+
+`{object}` this
+
 <sub>Go: [TOC](#tableofcontents) | [ApiDox.prototype](#toc_apidoxprototype)</sub>
 
 # ApiDox.prototype.convert()
