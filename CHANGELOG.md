@@ -1,3 +1,8 @@
+# 0.3.3
+
+- feat(ApiDox): Add `inputTitle` config (#3)
+  - Allow `set('inputTitle', <false|string>)` to either omit `Source: ...` from markdown or customize the link text.
+
 # 0.3.2
 
 - fix(ApiDox): Return `this` from `parse` to match docs (#1)
