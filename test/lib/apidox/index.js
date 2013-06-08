@@ -12,8 +12,11 @@ describe('ApiDox', function() {
   beforeEach(function() {
     this.dox = apidox.create();
     this.fixtureDir = __dirname + '/../../fixture';
-    this.useFixture = function() {
+    this.useFixture = function(fromText) {
       process.chdir(this.fixtureDir);
+      if (fromText) {
+        this.dox.set('inputText', T.fs.readFileSync('./lib/kitchen-sink.js').toString());
+      }
       this.dox.set('input', 'lib/kitchen-sink.js');
       this.dox.set('output', 'docs/kitchen-sink.md');
     }.bind(this);
@@ -61,6 +64,23 @@ describe('ApiDox', function() {
       actualStr.split('\n').should.deep.equal(expectedStr.split('\n'));
 
       actualStr.should.equal(expectedStr);
+    });
+  });
+
+  describe('integrationText', function() {
+    it('should parse fixture', function() {
+      var expectedStr = T.fs.readFileSync(this.fixtureDir + '/docs/kitchen-sink.md').toString();
+      this.useFixture(true);
+      this.spy(fs, 'readFileSync');
+      this.dox.parse();
+      var actualStr = this.dox.convert();
+
+      // split() for easier-to-read diff from mocha
+      actualStr.split('\n').should.deep.equal(expectedStr.split('\n'));
+
+      actualStr.should.equal(expectedStr);
+
+      fs.readFileSync.called.should.equal(false);
     });
   });
 });
