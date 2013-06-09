@@ -1,11 +1,8 @@
-# 0.3.4
-
-- feat(ApiDox): Add `inputText` config as alternative to `input` (#4)
-
 # 0.3.3
 
 - feat(ApiDox): Add `inputTitle` config (#3)
   - Allow `set('inputTitle', <false|string>)` to either omit `Source: ...` from markdown or customize the link text.
+- feat(ApiDox): Add `inputText` config as alternative to `input` (#4)
 
 # 0.3.2
 
