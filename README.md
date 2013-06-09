@@ -42,6 +42,10 @@ Main differences from `dox --api`:
 
   MIT
 
+## Contributors
+
+- [@davedoesdev](https://github.com/davedoesdev)
+
 ## Tests
 
     npm test
