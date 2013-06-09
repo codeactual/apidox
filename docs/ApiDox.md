@@ -61,10 +61,11 @@ var markdown = dox
 **Configuration:**
 
 - `{string} input` Source file to read
-- `{string} output` Markdown file to write
+- `{string} inputText` Alternative to `input`
 - `{string|boolean} [inputTitle=input]` Customize `Source: ...` link text
   - `false`: Omit `Source: ...` entirely from markdown
   - `string`: Set link text (does not affect link URL)
+- `{string} output` Markdown file to write
 
 **Properties:**
 
