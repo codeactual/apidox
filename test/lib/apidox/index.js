@@ -58,6 +58,12 @@ describe('ApiDox', function() {
       this.dox.prependSourceLink();
       this.dox.lines.should.deep.equal(['', sprintf('_Source: %s_', title)]);
     });
+
+    it('should omit lines if input text supplied and no title', function() {
+      this.useFixture(true, true);
+      this.dox.prependSourceLink();
+      this.dox.lines.should.deep.equal(['']);
+    });
   });
 
   describe('integration', function() {
