@@ -12,12 +12,14 @@ describe('ApiDox', function() {
   beforeEach(function() {
     this.dox = apidox.create();
     this.fixtureDir = __dirname + '/../../fixture';
-    this.useFixture = function(fromText) {
+    this.useFixture = function(fromText, noInput) {
       process.chdir(this.fixtureDir);
       if (fromText) {
         this.dox.set('inputText', T.fs.readFileSync('./lib/kitchen-sink.js').toString());
       }
-      this.dox.set('input', 'lib/kitchen-sink.js');
+      if (!noInput) {
+        this.dox.set('input', 'lib/kitchen-sink.js');
+      }
       this.dox.set('output', 'docs/kitchen-sink.md');
     }.bind(this);
   });
@@ -47,6 +49,14 @@ describe('ApiDox', function() {
       this.dox.set('inputTitle', title);
       this.dox.prependSourceLink();
       this.dox.lines.should.deep.equal(['', sprintf('_Source: [%s](../lib/kitchen-sink.js)_', title)]);
+    });
+
+    it('should not link if input text supplied', function() {
+      var title = 'foo.js';
+      this.useFixture(true, true);
+      this.dox.set('inputTitle', title);
+      this.dox.prependSourceLink();
+      this.dox.lines.should.deep.equal(['', sprintf('_Source: %s_', title)]);
     });
   });
 
