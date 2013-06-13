@@ -30,6 +30,24 @@ describe('ApiDox', function() {
     });
   });
 
+  describe('#prependSourceDesc', function() {
+    beforeEach(function() {
+      this.useFixture();
+      this.dox.parse();
+    });
+
+    it('should use comment summary', function() {
+      this.dox.prependSourceDesc();
+      this.dox.lines.should.deep.equal([this.dox.fileComment.description.summary]);
+    });
+
+    it('should use full comment', function() {
+      this.dox.set('fullSourceDescription', true);
+      this.dox.prependSourceDesc();
+      this.dox.lines.should.deep.equal([this.dox.fileComment.description.full]);
+    });
+  });
+
   describe('#prependSourceHeader', function() {
     beforeEach(function() {
       this.stub(this.dox, 'linkMethodNames').returns('');
