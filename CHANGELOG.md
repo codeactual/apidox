@@ -1,3 +1,9 @@
+# 0.3.4
+
+- feat(ApiDox): Added `fullSourceDescription` option to insert full source description instead of summary. Defaults to false.
+- fix(ApiDox): Omit source lines if no `input` or `inputTitle`
+- fix(ApiDox): If `inputText` specified and no input, don't generate the link target
+
 # 0.3.3
 
 - feat(ApiDox): Add `inputTitle` config (#3)
