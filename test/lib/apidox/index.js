@@ -99,6 +99,17 @@ describe('ApiDox', function() {
 
       actualStr.should.equal(expectedStr);
     });
+
+    it('should add extra heading levels', function() {
+      this.dox.set('extraHeadingLevels', 1);
+      var expectedStr = T.fs.readFileSync(this.fixtureDir + '/docs/kitchen-sink.md').toString().replace(/\n#/g, '\n##');
+      var actualStr = this.dox.convert();
+
+      // split() for easier-to-read diff from mocha
+      actualStr.split('\n').should.deep.equal(expectedStr.split('\n'));
+
+      actualStr.should.equal(expectedStr);
+    });
   });
 
   describe('integrationText', function() {
