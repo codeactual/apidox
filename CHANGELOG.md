@@ -1,3 +1,7 @@
+# 0.3.5
+
+- chore(deps): Upgrade NPM dependencies
+
 # 0.3.4
 
 - feat(ApiDox): Added `fullSourceDescription` option to insert full source description instead of summary. Defaults to false.
