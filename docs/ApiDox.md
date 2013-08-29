@@ -87,6 +87,7 @@ var markdown = dox
 - `{array} toc` Collected table-of-contents metadata objects
   - `{string} title` Link title
   - `{string} url` Link URL
+- `{array} throws` Collected `@throws` lines
 
 <sub>Go: [TOC](#tableofcontents)</sub>
 

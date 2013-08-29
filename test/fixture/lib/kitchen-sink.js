@@ -120,6 +120,13 @@ Some_Klass.prototype.fooFoo09 = function() {
  *   Return body 1st line
  *   Return body 2nd line
  *   Link this: Some_Klass.baz
+ * @throws {Error} Whenever it's Friday
+ * - Error item 1
+ * - Error item 2
+ * @throws {CustomError} Whenever it's Monday
+ * - CustomError item 1
+ * - CustomError item 2 (Link this: Some_Klass.baz)
+ * @throws {AnotherCustomError} Whenever it's Tuesday (Link this: Some_Klass.baz)
  */
 Some_Klass.prototype.bar = function(noSummary, str, obj) {
 };
