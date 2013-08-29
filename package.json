@@ -28,17 +28,17 @@
     "url": "https://github.com/codeactual/apidox.git"
   },
   "dependencies": {
-    "commander": "~1.1.1",
+    "commander": "~2.0.0",
     "dox": "~0.4.3"
   },
   "devDependencies": {
-    "chai": "~1.6.0",
-    "component": "~0.16.0",
+    "chai": "~1.7.2",
+    "component": "~0.17.0",
     "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.5.4",
+    "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-shell": "~0.2.1",
-    "mocha": "~1.10.0",
+    "grunt-shell": "~0.3.1",
+    "mocha": "~1.12.0",
     "sinon": "~1.7.2",
     "sinon-chai": "~2.4.0",
     "sinon-doublist": "~0.4.0",
