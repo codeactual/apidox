@@ -123,7 +123,7 @@ Some_Klass.prototype.fooFoo09 = function() {
  * @throws {Error} Whenever it's Friday
  * - Error item 1
  * - Error item 2
- * @throws {CustomError} Whenever it's Monday
+ * @throws {CustomError|OtherCustomError} Whenever it's Monday
  * - CustomError item 1
  * - CustomError item 2 (Link this: Some_Klass.baz)
  * @throws {AnotherCustomError} Whenever it's Tuesday (Link this: Some_Klass.baz)

@@ -156,7 +156,7 @@ Link this: [Some_Klass.baz](#some_klassbazstr-arr)
 - Error item 1
 - Error item 2
 
-`{CustomError}` Whenever it's Monday
+`{CustomError | OtherCustomError}` Whenever it's Monday
 
 - CustomError item 1
 - CustomError item 2 (Link this: [Some_Klass.baz](#some_klassbazstr-arr))
