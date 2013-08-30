@@ -1,5 +1,6 @@
 # 0.3.5
 
+- feat(ApiDox): Add `@throws` rendering based on `dox-0.4.4` support
 - chore(deps): Upgrade NPM dependencies
 
 # 0.3.4
