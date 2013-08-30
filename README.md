@@ -11,6 +11,7 @@ Main differences from `dox --api`:
 * Method references are auto-linked to associated sections
 * Links to Table of Contents and parent object's section
 * `<ul>` of `@param` w/ one level of sub-items
+* `<ul>` of `@throws` w/ one level of sub-items
 * `@return` with one level of `<ul>` items
 * `<ul>` of `@see` (w/ `dox` URL detection intact)
 * Boldfaced section headings (ex. `Configuration:`) in method summaries

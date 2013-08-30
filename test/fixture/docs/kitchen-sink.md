@@ -151,17 +151,15 @@ Link this: [Some_Klass.baz](#some_klassbazstr-arr)
 
 **Throws:**
 
-`{Error}` Whenever it's Friday
+- `{Error}` Whenever it's Friday
+  - Error item 1
+  - Error item 2
 
-- Error item 1
-- Error item 2
+- `{CustomError | OtherCustomError}` Whenever it's Monday
+  - CustomError item 1
+  - CustomError item 2 (Link this: [Some_Klass.baz](#some_klassbazstr-arr))
 
-`{CustomError | OtherCustomError}` Whenever it's Monday
-
-- CustomError item 1
-- CustomError item 2 (Link this: [Some_Klass.baz](#some_klassbazstr-arr))
-
-`{AnotherCustomError}` Whenever it's Tuesday (Link this: [Some_Klass.baz](#some_klassbazstr-arr))
+- `{AnotherCustomError}` Whenever it's Tuesday (Link this: [Some_Klass.baz](#some_klassbazstr-arr))
 
 **See:**
 
