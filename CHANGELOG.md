@@ -1,3 +1,7 @@
+# 0.3.6
+
+- feat(markdown): Support two levels of list items under `@param`
+
 # 0.3.5
 
 - feat(ApiDox): Add `@throws` rendering based on `dox-0.4.4` support

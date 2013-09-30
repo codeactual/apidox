@@ -142,6 +142,8 @@ Some_Klass.prototype.bar = function(noSummary, str, obj) {
  * @param {string} str String summary <html>
  * @param {array} arr Array summary `<html>`
  * - Array item 1
+ *   - Array item 1a
+ *   - Array item 1b
  * - Array item 2
  * - Array item `<html>`
  * - Array item <html>
