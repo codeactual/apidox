@@ -8,6 +8,8 @@
 
 var commander = require('commander');
 commander
+		.option('-t, --target <folder>', 'Markdown files root', String)
+    .option('-r, --root <folder>', 'Source files root', String)
     .option('-i, --input <file>', 'Source file to read', String)
     .option('-o, --output <file>', 'Markdown file to write', String)
     .parse(process.argv);

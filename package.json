@@ -3,7 +3,9 @@
   "description": "Generate node.js module API markdown with dox",
   "version": "0.3.6",
   "main": "index.js",
-  "bin": "./bin/apidox",
+  "bin": {
+    "apidox": "./bin/apidox"
+  },
   "keywords": [
     "dox",
     "gitemplate",
@@ -16,7 +18,7 @@
   "contributors": [
     {
       "name": "David Smith",
-      "web": "https://github.com/codeactual/"
+      "url": "https://github.com/codeactual/"
     }
   ],
   "bugs": {
@@ -28,8 +30,11 @@
     "url": "https://github.com/codeactual/apidox.git"
   },
   "dependencies": {
-    "commander": "~2.0.0",
-    "dox": "~0.4.4"
+  	"async": "*",
+  	"lodash": "*",
+  	"commander": "~2.0.0",
+    "dox": "~0.4.4",
+    "mkdirp": "~0.3.5"
   },
   "devDependencies": {
     "chai": "~1.7.2",
@@ -52,8 +57,19 @@
     "originSha": "0ad44ac551",
     "originUrl": "/var/dev/gitemplate-node-bin/.git"
   },
-  "author": "David Smith <codeactual@gmail.com>",
+  "author": {
+    "name": "David Smith",
+    "email": "codeactual@gmail.com"
+  },
   "devdir-ci": {
     "version": 1
-  }
+  },
+  "readme": "# apidox\n\nGenerate node.js API markdown with [dox](https://github.com/visionmedia/dox)\n\n[![Build Status](https://travis-ci.org/codeactual/apidox.png)](https://travis-ci.org/codeactual/apidox)\n\n## Markdown\n\nMain differences from `dox --api`:\n\n* Method references are auto-linked to associated sections\n* Links to Table of Contents and parent object's section\n* `<ul>` of `@param` w/ two levels of sub-items\n* `<ul>` of `@throws` w/ one level of sub-items\n* `@return` with one level of `<ul>` items\n* `<ul>` of `@see` (w/ `dox` URL detection intact)\n* Boldfaced section headings (ex. `Configuration:`) in method summaries\n* Source file link\n\n## Examples\n\n### CLI\n\n    cd /path/to/proj\n    apidox --input lib/util/index.js --output docs/Util.md\n\n### Output\n\n* [weir](https://github.com/codeactual/weir/blob/master/docs/Weir.md)\n* [conjure](https://github.com/codeactual/conjure/blob/master/docs/Conjure.md)\n\n## Installation\n\n### [NPM](https://npmjs.org/package/apidox)\n\n    npm install apidox\n\n## API\n\n[Documentation](docs/ApiDox.md)\n\n## License\n\n  MIT\n\n## Contributors\n\n- [@davedoesdev](https://github.com/davedoesdev)\n\n## Tests\n\n    npm test\n",
+  "readmeFilename": "README.md",
+  "_id": "apidox@0.3.6",
+  "dist": {
+    "shasum": "3801519ee8f57a800e1a0a7520ad52e692e9e21e"
+  },
+  "_from": "apidox@*",
+  "_resolved": "https://registry.npmjs.org/apidox/-/apidox-0.3.6.tgz"
 }
