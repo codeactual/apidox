@@ -2,7 +2,7 @@
   "name": "apidox",
   "repo": "codeactual/apidox",
   "description": "Generate node.js module API markdown with dox",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "keywords": [
     "dox",
     "gitemplate",
@@ -14,7 +14,8 @@
   ],
   "dependencies": {
     "visionmedia/configurable.js": "f87ca5f",
-    "codeactual/extend": "0.1.0"
+    "codeactual/extend": "0.1.0",
+    "codeactual/require-component": "0.1.1"
   },
   "main": "lib/component/main.js",
   "scripts": [

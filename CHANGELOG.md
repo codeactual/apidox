@@ -1,3 +1,7 @@
+# 0.3.7
+
+- chore(npm): Upgrade deps
+
 # 0.3.6
 
 - feat(markdown): Support two levels of list items under `@param`

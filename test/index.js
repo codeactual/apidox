@@ -4,7 +4,7 @@ T.sinon = require('sinon');
 var chai = require('chai');
 
 T.should = chai.should();
-chai.Assertion.includeStack = true;
+chai.config.includeStack = true;
 chai.use(require('sinon-chai'));
 
 T.fs = require('fs');

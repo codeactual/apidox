@@ -1,7 +1,7 @@
 {
   "name": "apidox",
   "description": "Generate node.js module API markdown with dox",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "main": "index.js",
   "bin": "./bin/apidox",
   "keywords": [
@@ -28,21 +28,21 @@
     "url": "https://github.com/codeactual/apidox.git"
   },
   "dependencies": {
-    "commander": "~2.0.0",
-    "dox": "~0.4.4"
+    "commander": "^2.0.0",
+    "dox": "^0.4.4"
   },
   "devDependencies": {
-    "chai": "~1.7.2",
-    "component": "~0.17.0",
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-shell": "~0.3.1",
-    "mocha": "~1.13.0",
-    "sinon": "~1.7.2",
-    "sinon-chai": "~2.4.0",
-    "sinon-doublist": "~0.4.0",
-    "grunt-horde": "~0.3.0",
+    "chai": "^1.9.1",
+    "component": "^1.0.0-rc5",
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-shell": "^0.7.0",
+    "mocha": "^1.18.2",
+    "sinon": "^1.9.1",
+    "sinon-chai": "^2.5.0",
+    "sinon-doublist": "^0.5.1",
+    "grunt-horde": "^0.3.3",
     "node-component-grunt": "git://github.com/codeactual/node-component-grunt.git"
   },
   "scripts": {

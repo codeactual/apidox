@@ -1,86 +1,62 @@
 (function() {
-    function require(path, parent, orig) {
-        var resolved = require.resolve(path);
-        if (null == resolved) {
-            orig = orig || path;
-            parent = parent || "root";
-            var err = new Error('Failed to require "' + orig + '" from "' + parent + '"');
-            err.path = orig;
-            err.parent = parent;
-            err.require = true;
-            throw err;
-        }
-        var module = require.modules[resolved];
-        if (!module.exports) {
-            module.exports = {};
+    function require(name) {
+        var module = require.modules[name];
+        if (!module) throw new Error('failed to require "' + name + '"');
+        if (!("exports" in module) && typeof module.definition === "function") {
             module.client = module.component = true;
-            module.call(this, module.exports, require.relative(resolved), module);
+            module.definition.call(this, module.exports = {}, module);
+            delete module.definition;
         }
         return module.exports;
     }
     require.modules = {};
-    require.aliases = {};
-    require.resolve = function(path) {
-        if (path.charAt(0) === "/") path = path.slice(1);
-        var paths = [ path, path + ".js", path + ".json", path + "/index.js", path + "/index.json" ];
-        for (var i = 0; i < paths.length; i++) {
-            var path = paths[i];
-            if (require.modules.hasOwnProperty(path)) return path;
-            if (require.aliases.hasOwnProperty(path)) return require.aliases[path];
-        }
-    };
-    require.normalize = function(curr, path) {
-        var segs = [];
-        if ("." != path.charAt(0)) return path;
-        curr = curr.split("/");
-        path = path.split("/");
-        for (var i = 0; i < path.length; ++i) {
-            if (".." == path[i]) {
-                curr.pop();
-            } else if ("." != path[i] && "" != path[i]) {
-                segs.push(path[i]);
-            }
-        }
-        return curr.concat(segs).join("/");
-    };
-    require.register = function(path, definition) {
-        require.modules[path] = definition;
-    };
-    require.alias = function(from, to) {
-        if (!require.modules.hasOwnProperty(from)) {
-            throw new Error('Failed to alias "' + from + '", it does not exist');
-        }
-        require.aliases[to] = from;
-    };
-    require.relative = function(parent) {
-        var p = require.normalize(parent, "..");
-        function lastIndexOf(arr, obj) {
-            var i = arr.length;
-            while (i--) {
-                if (arr[i] === obj) return i;
-            }
-            return -1;
-        }
-        function localRequire(path) {
-            var resolved = localRequire.resolve(path);
-            return require(resolved, parent, path);
-        }
-        localRequire.resolve = function(path) {
-            var c = path.charAt(0);
-            if ("/" == c) return path.slice(1);
-            if ("." == c) return require.normalize(p, path);
-            var segs = parent.split("/");
-            var i = lastIndexOf(segs, "deps") + 1;
-            if (!i) i = 0;
-            path = segs.slice(0, i + 1).join("/") + "/deps/" + path;
-            return path;
+    require.register = function(name, definition) {
+        require.modules[name] = {
+            definition: definition
         };
-        localRequire.exists = function(path) {
-            return require.modules.hasOwnProperty(localRequire.resolve(path));
-        };
-        return localRequire;
     };
-    require.register("visionmedia-configurable.js/index.js", function(exports, require, module) {
+    require.define = function(name, exports) {
+        require.modules[name] = {
+            exports: exports
+        };
+    };
+    require.register("codeactual~extend@0.1.0", function(exports, module) {
+        module.exports = function extend(object) {
+            var args = Array.prototype.slice.call(arguments, 1);
+            for (var i = 0, source; source = args[i]; i++) {
+                if (!source) continue;
+                for (var property in source) {
+                    object[property] = source[property];
+                }
+            }
+            return object;
+        };
+    });
+    require.register("codeactual~require-component@0.1.1", function(exports, module) {
+        "use strict";
+        module.exports = function(require) {
+            function requireComponent(baseName) {
+                var found;
+                Object.keys(require.modules).forEach(function findComponent(fullName) {
+                    if (found) {
+                        return;
+                    }
+                    if (new RegExp("(^|~)" + baseName + "@").test(fullName)) {
+                        found = fullName;
+                    }
+                });
+                if (found) {
+                    return require(found);
+                } else {
+                    return require(baseName);
+                }
+            }
+            return {
+                requireComponent: requireComponent
+            };
+        };
+    });
+    require.register("visionmedia~configurable.js@f87ca5f", function(exports, module) {
         module.exports = function(obj) {
             obj.settings = {};
             obj.set = function(name, val) {
@@ -111,32 +87,13 @@
             return obj;
         };
     });
-    require.register("codeactual-extend/index.js", function(exports, require, module) {
-        module.exports = function extend(object) {
-            var args = Array.prototype.slice.call(arguments, 1);
-            for (var i = 0, source; source = args[i]; i++) {
-                if (!source) continue;
-                for (var property in source) {
-                    object[property] = source[property];
-                }
-            }
-            return object;
-        };
+    require.register("apidox", function(exports, module) {
+        module.exports = require("codeactual~require-component@0.1.1")(require);
     });
-    require.register("apidox/lib/component/main.js", function(exports, require, module) {
-        module.exports = {
-            requireComponent: require
-        };
-    });
-    require.alias("visionmedia-configurable.js/index.js", "apidox/deps/configurable.js/index.js");
-    require.alias("visionmedia-configurable.js/index.js", "configurable.js/index.js");
-    require.alias("codeactual-extend/index.js", "apidox/deps/extend/index.js");
-    require.alias("codeactual-extend/index.js", "extend/index.js");
-    require.alias("apidox/lib/component/main.js", "apidox/index.js");
     if (typeof exports == "object") {
         module.exports = require("apidox");
     } else if (typeof define == "function" && define.amd) {
-        define(function() {
+        define([], function() {
             return require("apidox");
         });
     } else {
