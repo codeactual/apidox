@@ -1,6 +1,0 @@
-*
-LICENSE
-!dist/**
-!bin/**
-!lib/**
-!index.js
