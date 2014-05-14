@@ -33,17 +33,18 @@
   },
   "devDependencies": {
     "chai": "^1.9.1",
+    "co-mocha": "0.0.4",
     "component": "^1.0.0-rc5",
     "grunt": "^0.4.4",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.4.0",
+    "grunt-horde": "^0.3.3",
     "grunt-shell": "^0.7.0",
     "mocha": "^1.18.2",
+    "node-component-grunt": "git://github.com/codeactual/node-component-grunt.git",
     "sinon": "^1.9.1",
     "sinon-chai": "^2.5.0",
-    "sinon-doublist": "^0.5.1",
-    "grunt-horde": "^0.3.3",
-    "node-component-grunt": "git://github.com/codeactual/node-component-grunt.git"
+    "sinon-doublist": "^0.5.1"
   },
   "scripts": {
     "test": "grunt test"
