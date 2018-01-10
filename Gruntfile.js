@@ -1,11 +1,16 @@
-module.exports = function(grunt) {
-  'use strict';
+'use strict';
 
-  require('grunt-horde')
-    .create(grunt)
-    .demand('initConfig.projName', 'apidox')
-    .demand('initConfig.instanceName', 'apidox')
-    .demand('initConfig.klassName', 'ApiDox')
-    .loot('node-component-grunt')
-    .attack();
+module.exports = function(grunt) {
+  grunt.initConfig({
+    eslint: {
+      target: [ 'Grunfile.js', 'index.js', 'lib/**/*.js', 'test/**/*.js' ]
+    },
+    mochaTest: {
+      src: 'test/**/*.js'
+    }
+  });
+  grunt.loadNpmTasks('grunt-eslint');
+  grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.registerTask('lint', 'eslint');
+  grunt.registerTask('test', 'mochaTest');
 };

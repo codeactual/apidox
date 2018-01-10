@@ -1,12 +1,11 @@
 {
   "name": "apidox",
   "description": "Generate node.js module API markdown with dox",
-  "version": "0.3.7",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": "./bin/apidox",
   "keywords": [
     "dox",
-    "gitemplate",
     "documentation",
     "generator",
     "jsdocs",
@@ -28,35 +27,25 @@
     "url": "https://github.com/codeactual/apidox.git"
   },
   "dependencies": {
-    "commander": "^2.0.0",
-    "dox": "^0.4.4"
+    "commander": "^2.12.2",
+    "dox": "^0.9.0"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "co-mocha": "0.0.4",
-    "component": "^1.0.0-rc5",
-    "grunt": "^0.4.4",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.4.0",
-    "grunt-horde": "^0.3.3",
-    "grunt-shell": "^0.7.0",
-    "mocha": "^1.18.2",
-    "node-component-grunt": "git://github.com/codeactual/node-component-grunt.git",
-    "sinon": "^1.9.1",
-    "sinon-chai": "^2.5.0",
-    "sinon-doublist": "^0.5.1"
+    "grunt": "^1.0.1",
+    "grunt-eslint": "^20.1.0",
+    "grunt-mocha-test": "^0.13.3",
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2",
+    "sinon": "^1.9.0",
+    "sinon-chai": "^2.14.0",
+    "sinon-doublist": "^0.5.1",
+    "babel-eslint": "~8.0.3"
   },
   "scripts": {
+    "lint": "grunt lint",
     "test": "grunt test"
   },
-  "gitemplate": {
-    "originSha": "0ad44ac551",
-    "originUrl": "/var/dev/gitemplate-node-bin/.git"
-  },
   "author": "David Smith <codeactual@gmail.com>",
-  "devdir-ci": {
-    "version": 1
-  },
   "files": [
     "index.js",
     "bin",
