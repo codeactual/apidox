@@ -115,7 +115,10 @@ Some_Klass.prototype.fooFoo09 = function() {
  * @see Some_Klass.baz
  * @return {array} Return summary, link this: Some_Klass.baz
  * * Return item 1
+ *   * Return item 1a
+ *   * Return item 1b
  * * Return item 2
+ *   * Return item 2a
  *
  *   Return body 1st line
  *   Return body 2nd line
@@ -149,7 +152,10 @@ Some_Klass.prototype.bar = function(noSummary, str, obj) {
  * - Array item <html>
  * @return {array} Return summary `<html>` <html>
  * - Return item 1
+ *   - Return item 1a
+ *   - Return item 1b
  * - Return item 2
+ *   - Return item 2a
  * - Return item `<html>`
  * - Return item <html>
  */

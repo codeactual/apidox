@@ -143,7 +143,10 @@ Link this: [Some_Klass.baz](#some_klassbazstr-arr)
 `{array}` Return summary, link this: [Some_Klass.baz](#some_klassbazstr-arr)
 
   * Return item 1
+    * Return item 1a
+    * Return item 1b
   * Return item 2
+    * Return item 2a
 
 Return body 1st line
 Return body 2nd line
@@ -194,7 +197,10 @@ Don't escape this: `<html>`
 `{array}` Return summary `<html>` &lt;html&gt;
 
   - Return item 1
+    - Return item 1a
+    - Return item 1b
   - Return item 2
+    - Return item 2a
   - Return item `<html>`
   - Return item &lt;html&gt;
 
