@@ -142,8 +142,8 @@ Link this: [Some_Klass.baz](#some_klassbazstr-arr)
 
 `{array}` Return summary, link this: [Some_Klass.baz](#some_klassbazstr-arr)
 
-* Return item 1
-* Return item 2
+  * Return item 1
+  * Return item 2
 
 Return body 1st line
 Return body 2nd line
@@ -193,10 +193,10 @@ Don't escape this: `<html>`
 
 `{array}` Return summary `<html>` &lt;html&gt;
 
-- Return item 1
-- Return item 2
-- Return item `<html>`
-- Return item &lt;html&gt;
+  - Return item 1
+  - Return item 2
+  - Return item `<html>`
+  - Return item &lt;html&gt;
 
 <sub>Go: [TOC](#tableofcontents) | [Some_Klass](#toc_some_klass)</sub>
 
