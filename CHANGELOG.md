@@ -1,3 +1,16 @@
+# 2.0.0
+
+- Make @return formatting consistent with @param and @throw
+
+# 1.0.0
+
+- Bump major version since we changed parser which may change output
+- Remove node-component-grunt dep
+
+# 0.3.8
+
+- Update to latest dox
+
 # 0.3.7
 
 - chore(npm): Upgrade deps
