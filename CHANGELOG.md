@@ -1,3 +1,7 @@
+# 2.0.2
+
+- Second attempt to update lodash to `v4.17.11` (and other packages) via `npm audit fix`
+
 # 2.0.1
 
 - Update lodash to `v4.17.11` due to security vulnerabilities via `npm audit fix`
