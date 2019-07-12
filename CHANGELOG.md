@@ -1,3 +1,7 @@
+# 2.0.3
+
+- Bump lodash to 4.17.14 (CVE-2019-10744).
+
 # 2.0.2
 
 - Second attempt to update lodash to `v4.17.11` (and other packages) via `npm audit fix`
