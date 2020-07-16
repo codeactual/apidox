@@ -37,7 +37,7 @@
     "grunt": "^1.0.4",
     "grunt-eslint": "^20.1.0",
     "grunt-mocha-test": "^0.13.3",
-    "mocha": "^4.1.0",
+    "mocha": "^8.0.1",
     "sinon": "^1.9.0",
     "sinon-chai": "^2.14.0",
     "sinon-doublist": "^0.5.1"
