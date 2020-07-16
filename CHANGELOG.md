@@ -1,3 +1,7 @@
+# 2.0.4
+
+- chore(deps): npm audit fix: bump lodash,acorn,minimist,mocha,mkdirp
+
 # 2.0.3
 
 - Bump lodash to 4.17.14 (CVE-2019-10744).
