@@ -1,3 +1,7 @@
+# 2.0.5
+
+- chore(deps): bump y18n from 4.0.0 to 4.0.1
+
 # 2.0.4
 
 - chore(deps): npm audit fix: bump lodash,acorn,minimist,mocha,mkdirp
